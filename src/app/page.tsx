@@ -1,66 +1,46 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Sidebar from '@/components/Sidebar';
+import { useScheduler } from '@/lib/store';
+import styles from './page.module.css';
 
 export default function Home() {
+  const { teachers, classrooms, subjects, batches } = useScheduler();
+
+  const stats = [
+    { label: 'Teachers', value: teachers.length, color: 'var(--pk-primary)' },
+    { label: 'Classrooms', value: classrooms.length, color: 'var(--pk-accent)' },
+    { label: 'Subjects', value: subjects.length, color: '#f59e0b' }, // Amber
+    { label: 'Batches', value: batches.length, color: '#ec4899' }, // Pink
+  ];
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="layout-container">
+      <Sidebar />
+      <main className="main-content">
+        <header className={styles.header}>
+          <h1>Dashboard Overview</h1>
+          <p style={{ color: 'var(--pk-text-muted)' }}>Welcome to the Intelligent Class Scheduling Platform</p>
+        </header>
+
+        <div className={styles.grid}>
+          {stats.map((stat) => (
+            <div key={stat.label} className="glass-panel" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <span style={{ color: 'var(--pk-text-muted)', fontSize: '0.875rem' }}>{stat.label}</span>
+              <span style={{ fontSize: '2.5rem', fontWeight: 700, color: stat.color }}>{stat.value}</span>
+            </div>
+          ))}
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Quick Launch Panel or Recent Activity could go here */}
+        <div style={{ marginTop: '2rem' }} className="glass-panel">
+          <div style={{ padding: '1.5rem' }}>
+            <h3>Quick Actions</h3>
+            <p>Navigate to <strong>Resources</strong> to add classrooms or <strong>Faculty</strong> to add teachers.</p>
+          </div>
         </div>
-      </main>
-    </div>
+
+      </main >
+    </div >
   );
 }

@@ -1,0 +1,36 @@
+.sidebar {
+    width: 250px;
+    background: var(--pk-surface);
+    /* Darker slate */
+    border-right: 1px solid var(--pk-border);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    height: 100vh;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--pk-text-muted);
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--pk-text-main);
+}

@@ -1,27 +1,24 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Dynamic Premium Modern Light Palette */
+  --pk-bg: #f8fafc;
+  /* Slate 50 */
+  --pk-surface: #ffffff;
+  /* White */
+  --pk-primary: #3b82f6;
+  /* Blue 500 */
+  --pk-primary-glow: rgba(59, 130, 246, 0.2);
+  --pk-accent: #10b981;
+  /* Emerald 500 */
+  --pk-text-main: #0f172a;
+  /* Slate 900 */
+  --pk-text-muted: #64748b;
+  /* Slate 500 */
+  --pk-border: rgba(148, 163, 184, 0.2);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  --gradient-main: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
 }
 
 * {
@@ -30,13 +27,81 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--pk-bg);
+  color: var(--pk-text-main);
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+.btn-primary {
+  background: var(--gradient-main);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px var(--pk-primary-glow);
+}
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+  background: rgba(241, 245, 249, 0.8);
+  /* Slate 100 with opacity */
+  border: 1px solid var(--pk-border);
+  color: var(--pk-text-main);
+  padding: 0.75rem;
+  border-radius: 8px;
+  width: 100%;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--pk-primary);
+  box-shadow: 0 0 0 2px var(--pk-primary-glow);
 }
