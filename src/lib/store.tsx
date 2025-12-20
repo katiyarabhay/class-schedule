@@ -47,19 +47,65 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
     const [config, setConfig] = useState<SchedulerConfig>(defaultState.config);
     const [schedule, setSchedule] = useState<ScheduleEntry[]>(defaultState.schedule);
 
-    const addTeacher = (t: Teacher) => setTeachers((prev) => [...prev, t]);
-    const removeTeacher = (id: string) => setTeachers((prev) => prev.filter((t) => t.id !== id));
+    // Load initial data
+    React.useEffect(() => {
+        import('@/app/actions').then(({ getInitialData }) => {
+            getInitialData().then((data) => {
+                setTeachers(data.teachers);
+                setClassrooms(data.classrooms);
+                setSubjects(data.subjects);
+                setBatches(data.batches);
+                setConfig(data.config);
+                setSchedule(data.schedule);
+            });
+        });
+    }, []);
 
-    const addClassroom = (c: Classroom) => setClassrooms((prev) => [...prev, c]);
-    const removeClassroom = (id: string) => setClassrooms((prev) => prev.filter((c) => c.id !== id));
+    const addTeacher = (t: Teacher) => {
+        setTeachers((prev) => [...prev, t]);
+        import('@/app/actions').then(({ addTeacherAction }) => addTeacherAction(t));
+    };
+    const removeTeacher = (id: string) => {
+        setTeachers((prev) => prev.filter((t) => t.id !== id));
+        import('@/app/actions').then(({ removeTeacherAction }) => removeTeacherAction(id));
+    };
 
-    const addSubject = (s: Subject) => setSubjects((prev) => [...prev, s]);
-    const removeSubject = (id: string) => setSubjects((prev) => prev.filter((s) => s.id !== id));
+    const addClassroom = (c: Classroom) => {
+        setClassrooms((prev) => [...prev, c]);
+        import('@/app/actions').then(({ addClassroomAction }) => addClassroomAction(c));
+    };
+    const removeClassroom = (id: string) => {
+        setClassrooms((prev) => prev.filter((c) => c.id !== id));
+        import('@/app/actions').then(({ removeClassroomAction }) => removeClassroomAction(id));
+    };
 
-    const addBatch = (b: Batch) => setBatches((prev) => [...prev, b]);
-    const removeBatch = (id: string) => setBatches((prev) => prev.filter((b) => b.id !== id));
+    const addSubject = (s: Subject) => {
+        setSubjects((prev) => [...prev, s]);
+        import('@/app/actions').then(({ addSubjectAction }) => addSubjectAction(s));
+    };
+    const removeSubject = (id: string) => {
+        setSubjects((prev) => prev.filter((s) => s.id !== id));
+        import('@/app/actions').then(({ removeSubjectAction }) => removeSubjectAction(id));
+    };
 
-    const updateConfig = (c: SchedulerConfig) => setConfig(c);
+    const addBatch = (b: Batch) => {
+        setBatches((prev) => [...prev, b]);
+        import('@/app/actions').then(({ addBatchAction }) => addBatchAction(b));
+    };
+    const removeBatch = (id: string) => {
+        setBatches((prev) => prev.filter((b) => b.id !== id));
+        import('@/app/actions').then(({ removeBatchAction }) => removeBatchAction(id));
+    };
+
+    const updateConfig = (c: SchedulerConfig) => {
+        setConfig(c);
+        import('@/app/actions').then(({ updateConfigAction }) => updateConfigAction(c));
+    };
+
+    const setScheduleWrapper = (s: ScheduleEntry[]) => {
+        setSchedule(s);
+        import('@/app/actions').then(({ saveScheduleAction }) => saveScheduleAction(s));
+    };
 
     return (
         <SchedulerContext.Provider
@@ -79,7 +125,7 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
                 addBatch,
                 removeBatch,
                 updateConfig,
-                setSchedule,
+                setSchedule: setScheduleWrapper,
             }}
         >
             {children}
