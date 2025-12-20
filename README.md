@@ -48,3 +48,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - **Operating System**: Windows, macOS, or Linux
 - **Node.js**: v18.17.0 or later (Tested on v24)
 - **Package Manager**: npm, yarn, pnpm, or bun
+
+## Libraries and Versions
+
+| Library | Version | Description |
+|---------|---------|-------------|
+| **next** | `16.0.10` | The React Framework for the Web |
+| **react** | `19.2.1` | The library for web and native user interfaces |
+| **react-dom** | `19.2.1` | Entry point to the DOM and server renderers for React |
+| **typescript** | `^5` | Typed superset of JavaScript |
+| **eslint** | `^9` | Pluggable JavaScript linter |
+
