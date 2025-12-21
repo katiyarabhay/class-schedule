@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import { useScheduler } from '@/lib/store';
 import { Subject, SlotType } from '@/lib/types';
+import SplitButton from '@/components/SplitButton';
+import { parseCSV } from '@/lib/csvParser';
+import { useRef } from 'react';
 import styles from '@/app/page.module.css';
 
 export default function SubjectsPage() {
@@ -14,6 +17,8 @@ export default function SubjectsPage() {
         type: 'Theory',
         credits: 3,
     });
+
+    const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
         if (!newSubject.name || !newSubject.code) return;
@@ -28,6 +33,35 @@ export default function SubjectsPage() {
         setNewSubject({ name: '', code: '', type: 'Theory', credits: 3 });
     };
 
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        try {
+            const data = await parseCSV<any>(file);
+            handleImport(data);
+        } catch (err) {
+            console.error(err);
+            alert('Failed to parse CSV');
+        }
+        if (fileInputRef.current) fileInputRef.current.value = '';
+    };
+
+    const handleImport = (data: any[]) => {
+        data.forEach(item => {
+            const subject: Subject = {
+                id: item.id || crypto.randomUUID(),
+                name: item.name || 'Unknown',
+                code: item.code || 'UNK',
+                type: (item.type === 'Lab' || item.type === 'Theory') ? item.type : 'Theory',
+                credits: item.credits || 3,
+                requiredBatches: item.requiredBatches ? item.requiredBatches.split(';') : []
+            };
+            addSubject(subject);
+        });
+        alert(`Imported ${data.length} subjects`);
+    };
+
     return (
         <div className="layout-container">
             <Sidebar />
@@ -39,6 +73,14 @@ export default function SubjectsPage() {
                 <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
                     <h3>Add New Subject</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr auto', gap: '1rem', alignItems: 'end' }}>
+                        {/* Hidden File Input */}
+                        <input
+                            type="file"
+                            accept=".csv"
+                            ref={fileInputRef}
+                            style={{ display: 'none' }}
+                            onChange={handleFileChange}
+                        />
                         <div>
                             <label>Name</label>
                             <input
@@ -73,7 +115,14 @@ export default function SubjectsPage() {
                                 onChange={(e) => setNewSubject({ ...newSubject, credits: parseInt(e.target.value) })}
                             />
                         </div>
-                        <button className="btn-primary" onClick={handleAdd}>Add</button>
+
+                        <SplitButton
+                            label="Add"
+                            onClick={handleAdd}
+                            menuOptions={[
+                                { label: 'Import CSV', onClick: () => fileInputRef.current?.click() }
+                            ]}
+                        />
                     </div>
                 </div>
 
@@ -105,7 +154,7 @@ export default function SubjectsPage() {
                         </div>
                     ))}
                 </div>
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }

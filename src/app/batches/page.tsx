@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import { useScheduler } from '@/lib/store';
 import { Batch } from '@/lib/types';
+import SplitButton from '@/components/SplitButton';
+import { parseCSV } from '@/lib/csvParser';
+import { useRef } from 'react';
 import styles from '@/app/page.module.css';
 
 export default function BatchesPage() {
@@ -14,6 +17,8 @@ export default function BatchesPage() {
         department: '',
     });
 
+    const fileInputRef = useRef<HTMLInputElement>(null);
+
     const handleAdd = () => {
         if (!newBatch.name) return;
         addBatch({
@@ -23,6 +28,33 @@ export default function BatchesPage() {
             department: newBatch.department || 'General',
         } as Batch);
         setNewBatch({ name: '', size: 40, department: '' });
+    };
+
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        try {
+            const data = await parseCSV<any>(file);
+            handleImport(data);
+        } catch (err) {
+            console.error(err);
+            alert('Failed to parse CSV');
+        }
+        if (fileInputRef.current) fileInputRef.current.value = '';
+    };
+
+    const handleImport = (data: any[]) => {
+        data.forEach(item => {
+            const batch: Batch = {
+                id: item.id || crypto.randomUUID(),
+                name: item.name || 'Unknown',
+                size: item.size || 40,
+                department: item.department || 'General'
+            };
+            addBatch(batch);
+        });
+        alert(`Imported ${data.length} batches`);
     };
 
     return (
@@ -36,6 +68,14 @@ export default function BatchesPage() {
                 <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
                     <h3>Add New Batch</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: '1rem', alignItems: 'end' }}>
+                        {/* Hidden File Input */}
+                        <input
+                            type="file"
+                            accept=".csv"
+                            ref={fileInputRef}
+                            style={{ display: 'none' }}
+                            onChange={handleFileChange}
+                        />
                         <div>
                             <label>Batch Name</label>
                             <input
@@ -60,7 +100,14 @@ export default function BatchesPage() {
                                 placeholder="CSE"
                             />
                         </div>
-                        <button className="btn-primary" onClick={handleAdd}>Add</button>
+
+                        <SplitButton
+                            label="Add"
+                            onClick={handleAdd}
+                            menuOptions={[
+                                { label: 'Import CSV', onClick: () => fileInputRef.current?.click() }
+                            ]}
+                        />
                     </div>
                 </div>
 
@@ -81,7 +128,7 @@ export default function BatchesPage() {
                         </div>
                     ))}
                 </div>
-            </main>
-        </div>
+            </main >
+        </div >
     );
 }

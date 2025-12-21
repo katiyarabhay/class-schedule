@@ -7,22 +7,45 @@ import { generateSchedule } from '@/lib/scheduler';
 import { DAYS_OF_WEEK } from '@/lib/types';
 import styles from '@/app/page.module.css';
 
+
+
 export default function TimetablePage() {
     const { teachers, classrooms, subjects, batches, config, schedule, setSchedule } = useScheduler();
     const [selectedBatch, setSelectedBatch] = useState<string>('all');
     const [isGenerating, setIsGenerating] = useState(false);
 
-    const handleGenerate = () => {
+    const handleGenerate = async () => {
         setIsGenerating(true);
-        // Timeout to allow UI to update
-        setTimeout(() => {
-            const newSchedule = generateSchedule(teachers, classrooms, subjects, batches, config);
+        try {
+            let newSchedule;
+
+            // Check if running in Electron
+
+
+            console.log("Using Web API for scheduling");
+            const response = await fetch('/api/schedule', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ teachers, classrooms, subjects, batches, config })
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to generate schedule');
+            }
+            newSchedule = await response.json();
+
             setSchedule(newSchedule);
-            setIsGenerating(false);
-            if (newSchedule.length === 0) {
+
+            if (Array.isArray(newSchedule) && newSchedule.length === 0) {
                 alert('No classes could be scheduled. Check constraints.');
             }
-        }, 100);
+        } catch (error: any) {
+            console.error(error);
+            alert('Error generating schedule: ' + (error.message || 'Unknown error'));
+        } finally {
+            setIsGenerating(false);
+        }
     };
 
     const filteredSchedule = selectedBatch === 'all'

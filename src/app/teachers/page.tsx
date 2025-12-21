@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import { useScheduler } from '@/lib/store';
 import { Teacher } from '@/lib/types';
+import SplitButton from '@/components/SplitButton';
+import { parseCSV } from '@/lib/csvParser';
+import { useRef } from 'react';
 import styles from '@/app/page.module.css'; // Reuse or create new
 
 export default function TeachersPage() {
@@ -13,6 +16,8 @@ export default function TeachersPage() {
         department: '',
         maxLoadPerWeek: 0,
     });
+
+    const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
         if (!newTeacher.name || !newTeacher.department) return;
@@ -28,6 +33,37 @@ export default function TeachersPage() {
         setNewTeacher({ name: '', department: '', maxLoadPerWeek: 12 });
     };
 
+    const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        try {
+            const data = await parseCSV<any>(file);
+            handleImport(data);
+        } catch (err) {
+            console.error(err);
+            alert('Failed to parse CSV');
+        }
+        if (fileInputRef.current) fileInputRef.current.value = '';
+    };
+
+    const handleImport = (data: any[]) => {
+        data.forEach(item => {
+            const teacher: Teacher = {
+                id: item.id || crypto.randomUUID(),
+                name: item.name || 'Unknown',
+                department: item.department || 'General',
+                qualifiedSubjects: item.qualifiedSubjects ? item.qualifiedSubjects.split(';') : [],
+                maxLoadPerDay: item.maxLoadPerDay || 4,
+                maxLoadPerWeek: item.maxLoadPerWeek || 12,
+                preferredSlots: [],
+                unavailableSlots: []
+            };
+            addTeacher(teacher);
+        });
+        alert(`Imported ${data.length} teachers`);
+    };
+
     return (
         <div className="layout-container">
             <Sidebar />
@@ -39,6 +75,14 @@ export default function TeachersPage() {
                 <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
                     <h3>Add New Faculty</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: '1rem', alignItems: 'end' }}>
+                        {/* Hidden File Input */}
+                        <input
+                            type="file"
+                            accept=".csv"
+                            ref={fileInputRef}
+                            style={{ display: 'none' }}
+                            onChange={handleFileChange}
+                        />
                         <div>
                             <label>Name</label>
                             <input
@@ -63,7 +107,13 @@ export default function TeachersPage() {
                                 onChange={(e) => setNewTeacher({ ...newTeacher, maxLoadPerWeek: parseInt(e.target.value) })}
                             />
                         </div>
-                        <button className="btn-primary" onClick={handleAdd}>Add Faculty</button>
+                        <SplitButton
+                            label="Add Faculty"
+                            onClick={handleAdd}
+                            menuOptions={[
+                                { label: 'Import CSV', onClick: () => fileInputRef.current?.click() }
+                            ]}
+                        />
                     </div>
                 </div>
 

@@ -1,0 +1,40 @@
+{
+    "teachers": [
+        {
+            "id": "t1",
+            "name": "Alice",
+            "qualifiedSubjects": [
+                "s1"
+            ]
+        }
+    ],
+    "classrooms": [
+        {
+            "id": "c1",
+            "name": "Room 101",
+            "capacity": 50,
+            "type": "Theory"
+        }
+    ],
+    "subjects": [
+        {
+            "id": "s1",
+            "name": "Math",
+            "type": "Theory",
+            "credits": 1
+        }
+    ],
+    "batches": [
+        {
+            "id": "b1",
+            "name": "Batch A",
+            "size": 30
+        }
+    ],
+    "config": {
+        "daysPerWeek": [
+            "Mon"
+        ],
+        "slotsPerDay": 2
+    }
+}

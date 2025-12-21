@@ -1,0 +1,3 @@
+name,code,type,credits,requiredBatches
+"Test Subject 1",TS101,Theory,3,Batch A;Batch B
+"Test Lab Subject",TS102L,Lab,2,Batch A
