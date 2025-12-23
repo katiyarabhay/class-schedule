@@ -16,6 +16,7 @@ interface AppState {
 
 interface AppContextType extends AppState {
     addTeacher: (teacher: Teacher) => void;
+    updateTeacher: (teacher: Teacher) => void;
     removeTeacher: (id: string) => void;
     addClassroom: (classroom: Classroom) => void;
     removeClassroom: (id: string) => void;
@@ -67,6 +68,12 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
         setTeachers((prev) => [...prev, t]);
         import('@/app/actions').then(({ addTeacherAction }) => addTeacherAction(t));
     };
+
+    const updateTeacher = (t: Teacher) => {
+        setTeachers((prev) => prev.map(old => old.id === t.id ? t : old));
+        import('@/app/actions').then(({ updateTeacherAction }) => updateTeacherAction(t));
+    };
+
     const removeTeacher = (id: string) => {
         setTeachers((prev) => prev.filter((t) => t.id !== id));
         import('@/app/actions').then(({ removeTeacherAction }) => removeTeacherAction(id));
@@ -119,6 +126,7 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
                 config,
                 schedule,
                 addTeacher,
+                updateTeacher,
                 removeTeacher,
                 addClassroom,
                 removeClassroom,

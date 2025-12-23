@@ -10,7 +10,7 @@ import { useRef } from 'react';
 import styles from '@/app/page.module.css'; // Reuse or create new
 
 export default function TeachersPage() {
-    const { teachers, addTeacher, removeTeacher } = useScheduler();
+    const { teachers, addTeacher, updateTeacher, removeTeacher } = useScheduler();
     const [newTeacher, setNewTeacher] = useState<Partial<Teacher>>({
         name: '',
         department: '',
@@ -122,6 +122,27 @@ export default function TeachersPage() {
                         <div key={t.id} className="glass-panel" style={{ padding: '1rem' }}>
                             <h4>{t.name}</h4>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>{t.department}</p>
+
+                            <div style={{ marginTop: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <label style={{ fontSize: '0.8rem', color: 'var(--pk-text-muted)' }}>Status:</label>
+                                <button
+                                    onClick={() => updateTeacher({ ...t, isAbsent: !t.isAbsent })}
+                                    style={{
+                                        background: t.isAbsent ? 'transparent' : 'rgba(16, 185, 129, 0.2)',
+                                        border: `1px solid ${t.isAbsent ? 'var(--pk-border)' : 'var(--pk-accent)'}`,
+                                        color: t.isAbsent ? 'var(--pk-text-muted)' : 'var(--pk-accent)',
+                                        padding: '0.2rem 0.6rem',
+                                        borderRadius: '12px',
+                                        fontSize: '0.75rem',
+                                        cursor: 'pointer',
+                                        fontWeight: 600
+                                    }}
+                                >
+                                    {t.isAbsent ? 'Absent' : 'Present'}
+                                </button>
+                                {t.isAbsent && <span style={{ fontSize: '0.75rem', color: '#ef4444' }}> (Excluded)</span>}
+                            </div>
+
                             <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <span style={{ fontSize: '0.8rem' }}>Load: {t.maxLoadPerWeek}/wk</span>
                                 <button

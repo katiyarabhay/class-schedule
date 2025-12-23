@@ -27,20 +27,27 @@ export function generateSchedule(
     // And for each Subject, we pick the first qualified teacher (or random).
 
     const classQueue: ClassRequest[] = [];
+    const teacherLoad: Record<string, number> = {};
+    teachers.forEach(t => teacherLoad[t.id] = 0);
 
     batches.forEach(batch => {
         subjects.forEach(subject => {
             // Find a teacher who can teach this subject
             // In real world, this is assigned. Here we auto-assign for MVP intelligence.
-            const teacher = teachers.find(t => t.qualifiedSubjects.includes(subject.id) || t.department === batch.department);
+            // MODIFICATION: Prioritize teachers who are NOT absent.
+            const qualifiedTeachers = teachers.filter(t => !t.isAbsent && (t.qualifiedSubjects.includes(subject.id) || t.department === batch.department));
 
-            // If no strict qualification, pick any teacher from same dept or just first one
-            const assignedTeacher = teacher || teachers[0]; // Fallback
+            // SORT BY LEAST LOADED
+            qualifiedTeachers.sort((a, b) => (teacherLoad[a.id] || 0) - (teacherLoad[b.id] || 0));
+
+            const assignedTeacher = qualifiedTeachers.length > 0 ? qualifiedTeachers[0] : teachers.find(t => t.qualifiedSubjects.includes(subject.id)); // Fallback
 
             if (assignedTeacher) {
                 // Add number of sessions based on credits
                 for (let i = 0; i < subject.credits; i++) {
+                    teacherLoad[assignedTeacher.id] = (teacherLoad[assignedTeacher.id] || 0) + 1;
                     classQueue.push({
+
                         batchId: batch.id,
                         subjectId: subject.id,
                         teacherId: assignedTeacher.id,
@@ -64,11 +71,61 @@ export function generateSchedule(
 
     // Helper to check availability
     const isSlotFree = (day: string, period: number, teacherId: string, batchId: string, roomId: string) => {
-        return !schedule.some(s =>
+        // 1. Basic Overlap Checks
+        const conflict = schedule.some(s =>
             s.day === day &&
             s.period === period &&
             (s.teacherId === teacherId || s.batchIds.includes(batchId) || s.classroomId === roomId)
         );
+        if (conflict) return false;
+
+        const teacher = teachers.find(t => t.id === teacherId);
+        if (!teacher) return true; // Should not happen
+
+        // 2. Teacher Unavailable Slots or Absent
+        if (teacher.isAbsent) return false;
+
+        if (teacher.unavailableSlots?.some(slot => slot.day === day && slot.period === period)) {
+            return false;
+        }
+
+        // 3. Teacher Max Load Per Day (Global Limit: 4)
+        const classesToday = schedule.filter(s => s.teacherId === teacherId && s.day === day).length;
+        const maxDaily = Math.min(teacher.maxLoadPerDay, 4);
+        if (classesToday >= maxDaily) {
+            return false;
+        }
+
+        // 4. Teacher Max Load Per Week (Global Limit: 20)
+        const classesWeek = schedule.filter(s => s.teacherId === teacherId).length;
+        const maxWeekly = Math.min(teacher.maxLoadPerWeek, 20);
+        if (classesWeek >= maxWeekly) {
+            return false;
+        }
+
+        // 5. Max 2 Consecutive Lectures
+        // Check neighbors: period-1, period-2, period+1, period+2
+        const hasClassAt = (p: number) => schedule.some(s => s.teacherId === teacherId && s.day === day && s.period === p);
+
+        let consecutive = 0;
+        // Count backward
+        let p = period - 1;
+        while (p > 0 && hasClassAt(p)) {
+            consecutive++;
+            p--;
+        }
+        // Count forward
+        p = period + 1;
+        while (p <= config.slotsPerDay && hasClassAt(p)) {
+            consecutive++;
+            p++;
+        }
+
+        if (consecutive >= 2) {
+            return false;
+        }
+
+        return true;
     };
 
     for (const req of classQueue) {
@@ -104,7 +161,7 @@ export function generateSchedule(
         }
 
         if (!placed) {
-            console.warn("Could not place class", req);
+            console.warn(`Could not place class: ${req.subjectId} for Batch ${req.batchId} with Teacher ${req.teacherId}`);
             // In a real app, we return a list of unplaced classes
         }
     }

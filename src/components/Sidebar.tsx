@@ -14,7 +14,7 @@ export default function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <div className={styles.logo}>
-                <h2>Scheduler<span style={{ color: 'var(--pk-primary)' }}>AI</span></h2>
+                <h2>AUTO<span style={{ color: 'var(--pk-primary)' }}>PLANNER</span></h2>
             </div>
             <nav className={styles.nav}>
                 {menuItems.map((item) => (

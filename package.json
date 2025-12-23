@@ -13,7 +13,7 @@
   },
   "build": {
     "appId": "com.class-scheduler.app",
-    "productName": "Class Scheduler",
+    "productName": "AUTOPLANNER",
     "win": {
       "target": "nsis"
     },
@@ -31,7 +31,8 @@
   "dependencies": {
     "next": "16.0.10",
     "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "react-dom": "19.2.1",
+    "recharts": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

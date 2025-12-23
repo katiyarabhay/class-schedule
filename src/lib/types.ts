@@ -26,6 +26,7 @@ export interface Teacher {
   maxLoadPerWeek: number;
   preferredSlots?: TimeSlot[];
   unavailableSlots?: TimeSlot[];
+  isAbsent?: boolean;
 }
 
 export interface Classroom {

@@ -1,19 +1,27 @@
 .sidebar {
     width: 250px;
-    background: var(--pk-surface);
-    /* Darker slate */
+    background: var(--glass-bg);
+    /* Semi-transparent */
+    backdrop-filter: blur(20px);
     border-right: 1px solid var(--pk-border);
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     height: 100vh;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -0.025em;
+    text-shadow: 0 0 10px var(--pk-primary-glow);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
@@ -26,11 +34,15 @@
     padding: 0.75rem 1rem;
     border-radius: 8px;
     color: var(--pk-text-muted);
-    transition: all 0.2s;
+    transition: all 0.3s ease;
     font-weight: 500;
+    border: 1px solid transparent;
 }
 
 .link:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--pk-text-main);
+    background: rgba(6, 182, 212, 0.1);
+    color: var(--pk-primary);
+    border-color: var(--pk-primary-glow);
+    box-shadow: 0 0 15px var(--pk-primary-glow);
+    transform: translateX(4px);
 }

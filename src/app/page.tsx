@@ -3,9 +3,11 @@
 import Sidebar from '@/components/Sidebar';
 import { useScheduler } from '@/lib/store';
 import styles from './page.module.css';
+import { UtilizationChart } from '@/components/UtilizationChart';
+import { ScheduleEntry, Teacher, Classroom } from '@/lib/types';
 
 export default function Home() {
-  const { teachers, classrooms, subjects, batches } = useScheduler();
+  const { teachers, classrooms, subjects, batches, schedule } = useScheduler();
 
   const stats = [
     { label: 'Teachers', value: teachers.length, color: 'var(--pk-primary)' },
@@ -13,6 +15,34 @@ export default function Home() {
     { label: 'Subjects', value: subjects.length, color: '#f59e0b' }, // Amber
     { label: 'Batches', value: batches.length, color: '#ec4899' }, // Pink
   ];
+
+  // Helper to count schedule occurrences
+  const countOccurrences = (sched: ScheduleEntry[], key: keyof ScheduleEntry, id: string) => {
+    return sched.filter(s => {
+      const val = s[key];
+      if (Array.isArray(val)) return val.includes(id);
+      return val === id;
+    }).length;
+  };
+
+  // 1. Teacher Utilization (Assigned vs Max Load)
+  const teacherStats = teachers.map(t => ({
+    name: t.name,
+    assigned: countOccurrences(schedule, 'teacherId', t.id),
+    max: t.maxLoadPerWeek
+  })).slice(0, 10); // Limit to 10 for display
+
+  // 2. Classroom Utilization (Occupancy Count)
+  const classroomStats = classrooms.map(c => ({
+    name: c.name,
+    occupancy: countOccurrences(schedule, 'classroomId', c.id)
+  }));
+
+  // 3. Subject Distribution
+  const subjectStats = subjects.map(s => ({
+    name: s.code,
+    count: countOccurrences(schedule, 'subjectId', s.id)
+  })).filter(s => s.count > 0); // Only show scheduled subjects
 
   return (
     <div className="layout-container">
@@ -30,6 +60,29 @@ export default function Home() {
               <span style={{ fontSize: '2.5rem', fontWeight: 700, color: stat.color }}>{stat.value}</span>
             </div>
           ))}
+        </div>
+
+        <div className={styles.grid} style={{ marginTop: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
+          <UtilizationChart
+            title="Teacher Utilization (Classes Assigned)"
+            data={teacherStats}
+            type="bar"
+            dataKey="assigned"
+            color="var(--pk-primary)"
+          />
+          <UtilizationChart
+            title="Classroom Occupancy"
+            data={classroomStats}
+            type="bar"
+            dataKey="occupancy"
+            color="var(--pk-accent)"
+          />
+          <UtilizationChart
+            title="Subject Distribution"
+            data={subjectStats}
+            type="pie"
+            dataKey="count"
+          />
         </div>
 
         {/* Quick Launch Panel or Recent Activity could go here */}

@@ -6,7 +6,7 @@ import { SchedulerProvider } from "@/lib/store";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Intelligent Class Scheduler",
+  title: "AUTOPLANNER",
   description: "Optimized timetable generation for higher education",
 };
 
