@@ -10,27 +10,57 @@ import { useRef } from 'react';
 import styles from '@/app/page.module.css'; // Reuse or create new
 
 export default function TeachersPage() {
-    const { teachers, addTeacher, updateTeacher, removeTeacher } = useScheduler();
+    const { teachers, subjects, addTeacher, updateTeacher, removeTeacher } = useScheduler();
     const [newTeacher, setNewTeacher] = useState<Partial<Teacher>>({
         name: '',
         department: '',
         maxLoadPerWeek: 0,
     });
+    const [subjectCode1, setSubjectCode1] = useState('');
+    const [subjectCode2, setSubjectCode2] = useState('');
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
-        if (!newTeacher.name || !newTeacher.department) return;
+        if (!newTeacher.name || !newTeacher.department) {
+            alert("Name and Department are required");
+            return;
+        }
+
+        // Subject Validation
+        if (!subjectCode1.trim()) {
+            alert("Subject Code 1 is compulsory");
+            return;
+        }
+
+        const validSubjectIds: string[] = [];
+        const codesToCheck = [subjectCode1, subjectCode2].filter(c => c.trim() !== '');
+
+        for (const code of codesToCheck) {
+            const subject = subjects.find(s => s.code.toLowerCase() === code.trim().toLowerCase());
+            if (subject) {
+                if (!validSubjectIds.includes(subject.id)) {
+                    validSubjectIds.push(subject.id);
+                }
+            } else {
+                alert(`Subject code '${code}' not found`);
+                return; // Stop if any code is invalid
+            }
+        }
+
         addTeacher({
             id: crypto.randomUUID(),
             name: newTeacher.name,
             department: newTeacher.department,
-            qualifiedSubjects: [],
+            qualifiedSubjects: validSubjectIds,
             maxLoadPerDay: 4,
             maxLoadPerWeek: newTeacher.maxLoadPerWeek || 12,
             ...newTeacher,
         } as Teacher);
         setNewTeacher({ name: '', department: '', maxLoadPerWeek: 12 });
+        setSubjectCode1('');
+        setSubjectCode2('');
+        alert("Teacher added successfully");
     };
 
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -48,20 +78,43 @@ export default function TeachersPage() {
     };
 
     const handleImport = (data: any[]) => {
+        let importedCount = 0;
         data.forEach(item => {
+            // Normalize keys to lowercase to be safe
+            const normalizedItem: any = {};
+            Object.keys(item).forEach(k => normalizedItem[k.toLowerCase()] = item[k]);
+
+            // Resolve Subject Codes to IDs
+            const codes = [];
+            if (normalizedItem.subjectcode1) codes.push(normalizedItem.subjectcode1);
+            if (normalizedItem.subjectcode2) codes.push(normalizedItem.subjectcode2);
+            // Also support the old list format if present
+            if (normalizedItem.qualifiedsubjects) {
+                codes.push(...normalizedItem.qualifiedsubjects.split(';'));
+            }
+
+            const validSubjectIds: string[] = [];
+            codes.forEach(code => {
+                const sub = subjects.find(s => s.code.toLowerCase() === code.trim().toLowerCase());
+                if (sub) validSubjectIds.push(sub.id);
+            });
+
+            if (!normalizedItem.name) return;
+
             const teacher: Teacher = {
-                id: item.id || crypto.randomUUID(),
-                name: item.name || 'Unknown',
-                department: item.department || 'General',
-                qualifiedSubjects: item.qualifiedSubjects ? item.qualifiedSubjects.split(';') : [],
-                maxLoadPerDay: item.maxLoadPerDay || 4,
-                maxLoadPerWeek: item.maxLoadPerWeek || 12,
+                id: normalizedItem.id || crypto.randomUUID(),
+                name: normalizedItem.name || 'Unknown',
+                department: normalizedItem.department || 'General',
+                qualifiedSubjects: validSubjectIds,
+                maxLoadPerDay: parseInt(normalizedItem.maxloadperday) || 4,
+                maxLoadPerWeek: parseInt(normalizedItem.maxloadperweek) || 12,
                 preferredSlots: [],
                 unavailableSlots: []
             };
             addTeacher(teacher);
+            importedCount++;
         });
-        alert(`Imported ${data.length} teachers`);
+        alert(`Imported ${importedCount} teachers`);
     };
 
     return (
@@ -107,11 +160,52 @@ export default function TeachersPage() {
                                 onChange={(e) => setNewTeacher({ ...newTeacher, maxLoadPerWeek: parseInt(e.target.value) })}
                             />
                         </div>
+
+                        {/* Subject Codes Inputs */}
+                        <div>
+                            <label>Subject Code 1 <span style={{ color: '#ef4444' }}>*</span></label>
+                            <input
+                                value={subjectCode1}
+                                onChange={(e) => setSubjectCode1(e.target.value)}
+                                placeholder="e.g. CS101"
+                            />
+                        </div>
+                        <div>
+                            <label>Subject Code 2</label>
+                            <input
+                                value={subjectCode2}
+                                onChange={(e) => setSubjectCode2(e.target.value)}
+                                placeholder="Optional"
+                            />
+                        </div>
+
                         <SplitButton
                             label="Add Faculty"
                             onClick={handleAdd}
                             menuOptions={[
-                                { label: 'Import CSV', onClick: () => fileInputRef.current?.click() }
+                                { label: 'Import CSV', onClick: () => fileInputRef.current?.click() },
+                                {
+                                    label: 'Download Sample CSV',
+                                    onClick: () => {
+                                        const headers = ['Name', 'Department', 'SubjectCode1', 'SubjectCode2', 'MaxLoadPerWeek']; // Fixed header
+                                        const rows = [
+                                            ['Dr. Alice Smith', 'Computer Science', 'BCA-4004', 'BCA-4001', '12'],
+                                            ['Prof. Bob Jones', 'Mathematics', 'BCA-5005', '', '10']
+                                        ];
+                                        const csvContent = [
+                                            headers.join(','),
+                                            ...rows.map(r => r.join(','))
+                                        ].join('\n');
+
+                                        const blob = new Blob([csvContent], { type: 'text/csv' });
+                                        const url = window.URL.createObjectURL(blob);
+                                        const a = document.createElement('a');
+                                        a.href = url;
+                                        a.download = 'teachers_sample.csv';
+                                        a.click();
+                                        window.URL.revokeObjectURL(url);
+                                    }
+                                }
                             ]}
                         />
                     </div>
@@ -122,6 +216,26 @@ export default function TeachersPage() {
                         <div key={t.id} className="glass-panel" style={{ padding: '1rem' }}>
                             <h4>{t.name}</h4>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>{t.department}</p>
+
+                            {/* Qualified Subjects Display */}
+                            <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                                {t.qualifiedSubjects.map(subId => {
+                                    const sub = subjects.find(s => s.id === subId);
+                                    return sub ? (
+                                        <span key={subId} style={{
+                                            fontSize: '0.75rem',
+                                            background: 'var(--pk-primary)',
+                                            color: 'white',
+                                            padding: '0.1rem 0.4rem',
+                                            borderRadius: '4px'
+                                        }}>
+                                            {sub.code}
+                                        </span>
+                                    ) : null;
+                                })}
+                            </div>
+
+
 
                             <div style={{ marginTop: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                 <label style={{ fontSize: '0.8rem', color: 'var(--pk-text-muted)' }}>Status:</label>

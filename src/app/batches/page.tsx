@@ -10,24 +10,43 @@ import { useRef } from 'react';
 import styles from '@/app/page.module.css';
 
 export default function BatchesPage() {
-    const { batches, addBatch, removeBatch } = useScheduler();
+    const { batches, subjects, addBatch, removeBatch } = useScheduler();
     const [newBatch, setNewBatch] = useState<Partial<Batch>>({
         name: '',
         size: 40,
         department: '',
+        requiredSubjects: [],
     });
+    const [subjectCodes, setSubjectCodes] = useState('');
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
         if (!newBatch.name) return;
+
+        // Parse Subject Codes
+        const codes = subjectCodes.split(',').map(c => c.trim()).filter(c => c !== '');
+        const validSubjectIds: string[] = [];
+
+        for (const code of codes) {
+            const subject = subjects.find(s => s.code.toLowerCase() === code.toLowerCase());
+            if (subject) {
+                if (!validSubjectIds.includes(subject.id)) validSubjectIds.push(subject.id);
+            } else {
+                alert(`Subject code '${code}' not found. Please check existing subjects.`);
+                return;
+            }
+        }
+
         addBatch({
             id: crypto.randomUUID(),
             name: newBatch.name,
             size: newBatch.size || 40,
             department: newBatch.department || 'General',
+            requiredSubjects: validSubjectIds,
         } as Batch);
         setNewBatch({ name: '', size: 40, department: '' });
+        setSubjectCodes('');
     };
 
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -50,7 +69,8 @@ export default function BatchesPage() {
                 id: item.id || crypto.randomUUID(),
                 name: item.name || 'Unknown',
                 size: item.size || 40,
-                department: item.department || 'General'
+                department: item.department || 'General',
+                requiredSubjects: []
             };
             addBatch(batch);
         });
@@ -100,6 +120,14 @@ export default function BatchesPage() {
                                 placeholder="CSE"
                             />
                         </div>
+                        <div>
+                            <label>Required Subjects (Codes)</label>
+                            <input
+                                value={subjectCodes}
+                                onChange={(e) => setSubjectCodes(e.target.value)}
+                                placeholder="e.g. BCA-4001, BCA-4004"
+                            />
+                        </div>
 
                         <SplitButton
                             label="Add"
@@ -117,6 +145,25 @@ export default function BatchesPage() {
                             <h4>{b.name}</h4>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>Size: {b.size} Students</p>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>Dept: {b.department}</p>
+
+                            <div style={{ marginTop: '0.5rem', display: 'flex', flexWrap: 'wrap', gap: '0.3rem' }}>
+                                {b.requiredSubjects?.map(subId => {
+                                    const sub = subjects.find(s => s.id === subId);
+                                    return sub ? (
+                                        <span key={subId} style={{
+                                            fontSize: '0.75rem',
+                                            background: 'var(--pk-secondary)',
+                                            color: 'white',
+                                            padding: '0.1rem 0.4rem',
+                                            borderRadius: '4px'
+                                        }}>
+                                            {sub.code}
+                                        </span>
+                                    ) : null;
+                                })}
+                                {!b.requiredSubjects?.length && <span style={{ fontSize: '0.8rem', color: 'var(--pk-text-muted)' }}>No subjects assigned</span>}
+                            </div>
+
                             <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'flex-end' }}>
                                 <button
                                     onClick={() => removeBatch(b.id)}

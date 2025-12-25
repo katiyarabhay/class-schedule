@@ -93,11 +93,27 @@ export default function TimetablePage() {
                         <thead>
                             <tr>
                                 <th style={{ textAlign: 'left', padding: '1rem', borderBottom: '1px solid var(--pk-border)' }}>Time / Day</th>
-                                {Array.from({ length: config.slotsPerDay }).map((_, i) => (
-                                    <th key={i} style={{ textAlign: 'left', padding: '1rem', borderBottom: '1px solid var(--pk-border)' }}>
-                                        Period {i + 1}
-                                    </th>
-                                ))}
+                                {Array.from({ length: config.slotsPerDay }).map((_, i) => {
+                                    // Logic to insert Break Header
+                                    // If break is after period 4, we want: P1, P2, P3, P4, BREAK, P5...
+                                    // But simple mapping is harder.
+                                    // Let's render header, then CHECK if we need to render break header.
+                                    const breakAfter = (config as any).breakAfter || 4; // Default to 4
+                                    const periodNum = i + 1;
+
+                                    return (
+                                        <>
+                                            <th key={i} style={{ textAlign: 'left', padding: '1rem', borderBottom: '1px solid var(--pk-border)' }}>
+                                                Period {periodNum}
+                                            </th>
+                                            {periodNum === breakAfter && (
+                                                <th key={`break-header`} style={{ textAlign: 'center', padding: '1rem', borderBottom: '1px solid var(--pk-border)', background: 'var(--pk-surface-2)', color: 'var(--pk-text-muted)' }}>
+                                                    Break (40m)
+                                                </th>
+                                            )}
+                                        </>
+                                    );
+                                })}
                             </tr>
                         </thead>
                         <tbody>
@@ -106,31 +122,42 @@ export default function TimetablePage() {
                                     <td style={{ padding: '1rem', fontWeight: 600, borderBottom: '1px solid var(--pk-border)' }}>{day}</td>
                                     {Array.from({ length: config.slotsPerDay }).map((_, i) => {
                                         const entries = getCellContent(day, i + 1);
-                                        return (
-                                            <td key={i} style={{ padding: '0.5rem', borderBottom: '1px solid var(--pk-border)', verticalAlign: 'top' }}>
-                                                {entries.map(entry => {
-                                                    const sub = subjects.find(s => s.id === entry.subjectId);
-                                                    const teacher = teachers.find(t => t.id === entry.teacherId);
-                                                    const room = classrooms.find(r => r.id === entry.classroomId);
-                                                    const batch = batches.find(b => b.id === entry.batchIds[0]); // assuming single batch for MVP
 
-                                                    return (
-                                                        <div key={entry.id} style={{
-                                                            background: 'rgba(59, 130, 246, 0.1)',
-                                                            border: '1px solid rgba(59, 130, 246, 0.2)',
-                                                            borderRadius: '6px',
-                                                            padding: '0.5rem',
-                                                            marginBottom: '0.5rem',
-                                                            fontSize: '0.85rem'
-                                                        }}>
-                                                            <div style={{ fontWeight: 600, color: 'var(--pk-primary)' }}>{sub?.code || 'Unknown'}</div>
-                                                            <div>{room?.name}</div>
-                                                            <div style={{ fontSize: '0.75rem', color: 'var(--pk-text-muted)' }}>{teacher?.name}</div>
-                                                            <div style={{ fontSize: '0.75rem', color: '#f59e0b' }}>{batch?.name}</div>
-                                                        </div>
-                                                    )
-                                                })}
-                                            </td>
+                                        const breakAfter = (config as any).breakAfter || 4;
+                                        const periodNum = i + 1;
+
+                                        return (
+                                            <>
+                                                <td key={i} style={{ padding: '0.5rem', borderBottom: '1px solid var(--pk-border)', verticalAlign: 'top' }}>
+                                                    {entries.map(entry => {
+                                                        const sub = subjects.find(s => s.id === entry.subjectId);
+                                                        const teacher = teachers.find(t => t.id === entry.teacherId);
+                                                        const room = classrooms.find(r => r.id === entry.classroomId);
+                                                        const batch = batches.find(b => b.id === entry.batchIds[0]); // assuming single batch for MVP
+
+                                                        return (
+                                                            <div key={entry.id} style={{
+                                                                background: 'rgba(59, 130, 246, 0.1)',
+                                                                border: '1px solid rgba(59, 130, 246, 0.2)',
+                                                                borderRadius: '6px',
+                                                                padding: '0.5rem',
+                                                                marginBottom: '0.5rem',
+                                                                fontSize: '0.85rem'
+                                                            }}>
+                                                                <div style={{ fontWeight: 600, color: 'var(--pk-primary)' }}>{sub?.code || 'Unknown'}</div>
+                                                                <div>{room?.name}</div>
+                                                                <div style={{ fontSize: '0.75rem', color: 'var(--pk-text-muted)' }}>{teacher?.name}</div>
+                                                                <div style={{ fontSize: '0.75rem', color: '#f59e0b' }}>{batch?.name}</div>
+                                                            </div>
+                                                        )
+                                                    })}
+                                                </td>
+                                                {periodNum === breakAfter && (
+                                                    <td key={`break-cell-${day}`} style={{ background: 'var(--pk-surface-2)', borderBottom: '1px solid var(--pk-border)' }}>
+                                                        {/* Empty Break Cell */}
+                                                    </td>
+                                                )}
+                                            </>
                                         );
                                     })}
                                 </tr>

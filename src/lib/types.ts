@@ -41,6 +41,7 @@ export interface Batch {
   name: string; // e.g., "CSE-A-2025"
   size: number;
   department: string;
+  requiredSubjects: string[]; // Subject IDs
 }
 
 export interface ScheduleEntry {

@@ -31,6 +31,8 @@ def solve_schedule(data):
     # If subject.requiredBatches is empty OR contains batch.id, assume it's needed.
     
     req_id_counter = 0
+    teacher_assigned_load = {} # Track assigned credits to balance load
+    
     for batch in batches:
         for subject in subjects:
              # Check if this batch takes this subject
@@ -60,11 +62,16 @@ def solve_schedule(data):
                 else: 
                      continue # Impossible to schedule without teachers
 
-            # For now, just pick the first qualified teacher. 
-            # Optimization: The solver could pick the teacher, but that adds variables.
+            # Load Balancing: Pick the teacher with the least current load
+            # Sort by load (asc), then by ID (consistent tie-break)
+            qualified_teachers.sort(key=lambda t: (teacher_assigned_load.get(t['id'], 0), t['id']))
             assigned_teacher = qualified_teachers[0]
+            
+            # Update load
+            credits = subject.get('credits', 1)
+            teacher_assigned_load[assigned_teacher['id']] = teacher_assigned_load.get(assigned_teacher['id'], 0) + credits
 
-            # Create requests based on credits/hours
+    # Create requests based on credits/hours
             credits = subject.get('credits', 1)
             for _ in range(credits):
                 requests.append({
@@ -77,19 +84,13 @@ def solve_schedule(data):
                 })
                 req_id_counter += 1
 
+    sys.stderr.write(f"Generated {len(requests)} requests.\n")
+    sys.stderr.write(f"Teacher Load: {json.dumps(teacher_assigned_load)}\n")
+
     # 2. Model
     model = cp_model.CpModel()
 
     # Variables
-    # grid[(request_idx, day_idx, period_idx, room_idx)] = bool
-    # This might be too huge. 
-    # Better: for each request, pick ONE (day, period, room) tuple.
-    
-    # We will use boolean vars: x[req_id, day, period, room_id]
-    
-    # To reduce variable count:
-    # Filter rooms by type and capacity FIRST.
-    
     x = {} # vars
     
     # For each request, create variables for valid slots/rooms
@@ -102,16 +103,16 @@ def solve_schedule(data):
             if room['type'] == req['type'] and room['capacity'] >= batch_size
         ]
         
-        # If no room fits, we can't schedule this request. Log warning?
         if not valid_rooms:
-            # Fallback: allows any room of same type or just any room?
-            # Strict for now.
+            sys.stderr.write(f"Warning: No valid room for req {r_idx} ({req['type']}, size {batch_size})\n")
             continue
 
         for d_idx in range(len(days)):
             for p_idx in range(slots_per_day):
                 for room in valid_rooms:
                     x[(r_idx, d_idx, p_idx, room['id'])] = model.NewBoolVar(f'req_{r_idx}_d{d_idx}_p{p_idx}_r{room["id"]}')
+
+    sys.stderr.write(f"Created {len(x)} variables.\n")
 
     # Constraints
     
@@ -194,9 +195,97 @@ def solve_schedule(data):
         for b_id, b_vars in batches_in_slot.items():
             model.Add(sum(b_vars) <= 1)
 
+    # 4. Consecutive Lecture Constraints
+    # Logic: No more than 2 consecutive classes.
+    # We check every window of 3 slots: sum(classes in p, p+1, p+2) <= 2
+    
+    # 4a. Batch Constraints
+    # Organize vars by (batch, day, period) -> list of vars
+    # Since we already iterated for "Max 1 per slot", we know sum(vars_at_p) is 0 or 1.
+    # We need to access these sums easily.
+    
+    # Re-use batches_in_slot and teachers_in_slot from previous loop?
+    # They were local to the loop over slots_vars. 
+    # Let's rebuild a global view for ease or iterate differently.
+    
+    # (batch_id, day) -> { period: [vars] }
+    batch_daily_vars = {}
+    teacher_daily_vars = {}
+
+    for (r_idx, d_idx, p_idx, room_id), var in x.items():
+        req = requests[r_idx]
+        b_id = req['batch_id']
+        t_id = req['teacher_id']
+        
+        # Batch
+        if (b_id, d_idx) not in batch_daily_vars: batch_daily_vars[(b_id, d_idx)] = {}
+        if p_idx not in batch_daily_vars[(b_id, d_idx)]: batch_daily_vars[(b_id, d_idx)][p_idx] = []
+        batch_daily_vars[(b_id, d_idx)][p_idx].append(var)
+        
+        # Teacher
+        if (t_id, d_idx) not in teacher_daily_vars: teacher_daily_vars[(t_id, d_idx)] = {}
+        if p_idx not in teacher_daily_vars[(t_id, d_idx)]: teacher_daily_vars[(t_id, d_idx)][p_idx] = []
+        teacher_daily_vars[(t_id, d_idx)][p_idx].append(var)
+
+    # Apply generic sliding window constraint
+    def add_max_consecutive_constraints(daily_map, limit=2):
+        break_after = config.get('breakAfter', 4) # Default to 4 if not set
+
+        for (entity_id, d_idx), p_map in daily_map.items():
+            # For this entity on this day
+            # Check windows: [p, p+1, ..., p+limit] -> length limit+1
+            # If sum > limit, it violates "max consecutive = limit"
+            
+            for p in range(slots_per_day - limit):
+                # CHECK: Does this window [p, p+1, p+2] cross the break?
+                # Window indices: p, p+1, p+2
+                # If break is after slot 4 (indices 0,1,2,3), then:
+                # Slot 3 and Slot 4 (indices) are separated by break.
+                # Index 3 is Period 4. Index 4 is Period 5.
+                # If the window includes BOTH index (break_after-1) AND index (break_after),
+                # then it is NOT a consecutive block of lectures.
+                
+                # Actually, simpler: The constraint is "No 3 consecutive CLASSES".
+                # If there is a break between P4 and P5, does P4 and P5 count as consecutive?
+                # User said: "Add a break time ... after 4th lecture".
+                # Usually, a break RESETS the "consecutive" counter.
+                # So P3, P4, (Break), P5 -> IS acceptable? Yes.
+                # P3, P4 is 2. (Break). P5 is 1. No sequence of 3.
+                # So verify: the window [P3, P4, P5] which is indices [2, 3, 4]
+                # Contains index 3 and 4.
+                # If window contains the break boundary, we should NOT enforce the constraint strictly across it
+                # OR we split the day into two segments and enforce separately.
+                
+                window_indices = [p + offset for offset in range(limit + 1)]
+                
+                # Check if window crosses the break boundary
+                # Boundary is between (break_after-1) and (break_after)
+                crosses_break = False
+                for i in range(len(window_indices) - 1):
+                    if window_indices[i] == break_after - 1 and window_indices[i+1] == break_after:
+                        crosses_break = True
+                        break
+                
+                if crosses_break:
+                    # If window crosses break, we assume the break breaks the chain.
+                    # So P3, P4, P5 is NOT 3 consecutive. It's 2 then 1.
+                    # So we SKIP adding this constraint.
+                    continue
+
+                # Gather all variables for periods p, p+1, ... p+limit
+                window_vars = []
+                for idx in window_indices:
+                    window_vars.extend(p_map.get(idx, []))
+                
+                if window_vars:
+                    model.Add(sum(window_vars) <= limit)
+
+    add_max_consecutive_constraints(batch_daily_vars, limit=2)
+    add_max_consecutive_constraints(teacher_daily_vars, limit=2)
+
     # 3. Solve
     solver = cp_model.CpSolver()
-    solver.parameters.max_time_in_seconds = 10.0
+    solver.parameters.max_time_in_seconds = 30.0
     status = solver.Solve(model)
 
     final_schedule = []
