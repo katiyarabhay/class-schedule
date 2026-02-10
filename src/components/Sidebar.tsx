@@ -8,6 +8,7 @@ const menuItems = [
     { label: 'Subjects', href: '/subjects' },
     { label: 'Batches', href: '/batches' },
     { label: 'Timetable', href: '/timetable' },
+    { label: 'Master View', href: '/resources' },
 ];
 
 export default function Sidebar() {
