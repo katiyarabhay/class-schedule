@@ -4,15 +4,16 @@ import { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import { useScheduler } from '@/lib/store';
 import { generateSchedule } from '@/lib/scheduler';
-import { DAYS_OF_WEEK } from '@/lib/types';
+import { DAYS_OF_WEEK, ScheduleEntry } from '@/lib/types';
 import styles from '@/app/page.module.css';
-
-
+import EditClassModal from '@/components/EditClassModal';
 
 export default function TimetablePage() {
     const { teachers, classrooms, subjects, batches, config, schedule, setSchedule } = useScheduler();
     const [selectedBatch, setSelectedBatch] = useState<string>('all');
     const [isGenerating, setIsGenerating] = useState(false);
+    const [isEditing, setIsEditing] = useState(false);
+    const [editingClass, setEditingClass] = useState<ScheduleEntry | null>(null);
 
     const handleGenerate = async () => {
         setIsGenerating(true);
@@ -20,8 +21,6 @@ export default function TimetablePage() {
             let newSchedule;
 
             // Check if running in Electron
-
-
             console.log("Using Web API for scheduling");
             const response = await fetch('/api/schedule', {
                 method: 'POST',
@@ -48,6 +47,24 @@ export default function TimetablePage() {
         }
     };
 
+    const handleClassClick = (entry: ScheduleEntry) => {
+        if (isEditing) {
+            setEditingClass(entry);
+        }
+    };
+
+    const handleSaveClass = (updatedClass: ScheduleEntry) => {
+        const updatedSchedule = schedule.map(s => s.id === updatedClass.id ? updatedClass : s);
+        setSchedule(updatedSchedule);
+        setEditingClass(null);
+    };
+
+    const handleDeleteClass = (classId: string) => {
+        const updatedSchedule = schedule.filter(s => s.id !== classId);
+        setSchedule(updatedSchedule);
+        setEditingClass(null);
+    };
+
     const filteredSchedule = selectedBatch === 'all'
         ? schedule
         : schedule.filter(s => s.batchIds.includes(selectedBatch));
@@ -65,13 +82,23 @@ export default function TimetablePage() {
             <main className="main-content">
                 <header className={styles.header} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <h1>Timetable</h1>
-                    <button
-                        className="btn-primary"
-                        onClick={handleGenerate}
-                        disabled={isGenerating}
-                    >
-                        {isGenerating ? 'Generating...' : 'Generate Optimized Schedule'}
-                    </button>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer', background: isEditing ? 'var(--pk-surface-2)' : 'transparent', padding: '0.5rem', borderRadius: '6px', border: '1px solid var(--pk-border)' }}>
+                            <input
+                                type="checkbox"
+                                checked={isEditing}
+                                onChange={e => setIsEditing(e.target.checked)}
+                            />
+                            Edit Mode
+                        </label>
+                        <button
+                            className="btn-primary"
+                            onClick={handleGenerate}
+                            disabled={isGenerating}
+                        >
+                            {isGenerating ? 'Generating...' : 'Generate Optimized Schedule'}
+                        </button>
+                    </div>
                 </header>
 
                 <div style={{ marginBottom: '1rem' }}>
@@ -136,14 +163,21 @@ export default function TimetablePage() {
                                                         const batch = batches.find(b => b.id === entry.batchIds[0]); // assuming single batch for MVP
 
                                                         return (
-                                                            <div key={entry.id} style={{
-                                                                background: 'rgba(59, 130, 246, 0.1)',
-                                                                border: '1px solid rgba(59, 130, 246, 0.2)',
-                                                                borderRadius: '6px',
-                                                                padding: '0.5rem',
-                                                                marginBottom: '0.5rem',
-                                                                fontSize: '0.85rem'
-                                                            }}>
+                                                            <div
+                                                                key={entry.id}
+                                                                onClick={() => handleClassClick(entry)}
+                                                                style={{
+                                                                    background: 'rgba(59, 130, 246, 0.1)',
+                                                                    border: isEditing ? '2px dashed var(--pk-primary)' : '1px solid rgba(59, 130, 246, 0.2)',
+                                                                    borderRadius: '6px',
+                                                                    padding: '0.5rem',
+                                                                    marginBottom: '0.5rem',
+                                                                    fontSize: '0.85rem',
+                                                                    cursor: isEditing ? 'pointer' : 'default',
+                                                                    transition: 'all 0.2s ease'
+                                                                }}
+                                                                title={isEditing ? "Click to edit" : ""}
+                                                            >
                                                                 <div style={{ fontWeight: 600, color: 'var(--pk-primary)' }}>{sub?.code || 'Unknown'}</div>
                                                                 <div>{room?.name}</div>
                                                                 <div style={{ fontSize: '0.75rem', color: 'var(--pk-text-muted)' }}>{teacher?.name}</div>
@@ -165,6 +199,18 @@ export default function TimetablePage() {
                         </tbody>
                     </table>
                 </div>
+
+                <EditClassModal
+                    classEntry={editingClass}
+                    isOpen={!!editingClass}
+                    onClose={() => setEditingClass(null)}
+                    onSave={handleSaveClass}
+                    onDelete={handleDeleteClass}
+                    teachers={teachers}
+                    classrooms={classrooms}
+                    subjects={subjects}
+                    batches={batches}
+                />
             </main>
         </div>
     );
