@@ -30,7 +30,7 @@ export default function Home() {
     name: t.name,
     assigned: countOccurrences(schedule, 'teacherId', t.id),
     max: t.maxLoadPerWeek
-  })).slice(0, 10); // Limit to 10 for display
+  }));
 
   // 2. Classroom Utilization (Occupancy Count)
   const classroomStats = classrooms.map(c => ({
@@ -63,19 +63,27 @@ export default function Home() {
         </div>
 
         <div className={styles.grid} style={{ marginTop: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
-          <UtilizationChart
-            title="Teacher Utilization (Classes Assigned)"
-            data={teacherStats}
-            type="bar"
-            dataKey="assigned"
-            color="var(--pk-primary)"
-          />
+          <div style={{ gridColumn: '1 / -1', height: '800px' }}>
+            <UtilizationChart
+              title="Teacher Utilization (Assigned vs Max Limit)"
+              data={teacherStats}
+              type="bar"
+              dataKey={['assigned', 'max']}
+              color={['var(--pk-primary)', '#82ca9d']}
+              layout="vertical"
+              xAxisLabel="Classes"
+              yAxisLabel="Teachers"
+              barSize={40}
+            />
+          </div>
           <UtilizationChart
             title="Classroom Occupancy"
             data={classroomStats}
             type="bar"
             dataKey="occupancy"
             color="var(--pk-accent)"
+            xAxisLabel="Classrooms"
+            yAxisLabel="Classes Scheduled"
           />
           <UtilizationChart
             title="Subject Distribution"

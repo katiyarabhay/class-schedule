@@ -1,32 +1,33 @@
+
 'use server';
 
-import { db } from '@/lib/db';
+import * as db from '@/lib/db';
 import { Batch, Classroom, ScheduleEntry, SchedulerConfig, Subject, Teacher } from '@/lib/types';
 
 export async function getInitialData() {
-    return await db.read();
+    return await db.getInitialData();
 }
 
 // Teachers
 export async function addTeacherAction(teacher: Teacher) {
-    await db.update('teachers', (teachers) => [...teachers, teacher]);
+    await db.addTeacher(teacher);
 }
 
 export async function removeTeacherAction(id: string) {
-    await db.update('teachers', (teachers) => teachers.filter((t) => t.id !== id));
+    await db.removeTeacher(id);
 }
 
 export async function updateTeacherAction(teacher: Teacher) {
-    await db.update('teachers', (teachers) => teachers.map(t => t.id === teacher.id ? teacher : t));
+    await db.updateTeacher(teacher);
 }
 
 // Classrooms
 export async function addClassroomAction(classroom: Classroom) {
-    await db.update('classrooms', (classrooms) => [...classrooms, classroom]);
+    await db.addClassroom(classroom);
 }
 
 export async function removeClassroomAction(id: string) {
-    await db.update('classrooms', (classrooms) => classrooms.filter((c) => c.id !== id));
+    await db.removeClassroom(id);
 }
 
 export async function updateClassroomAction(classroom: Classroom) {
@@ -35,27 +36,27 @@ export async function updateClassroomAction(classroom: Classroom) {
 
 // Subjects
 export async function addSubjectAction(subject: Subject) {
-    await db.update('subjects', (subjects) => [...subjects, subject]);
+    await db.addSubject(subject);
 }
 
 export async function removeSubjectAction(id: string) {
-    await db.update('subjects', (subjects) => subjects.filter((s) => s.id !== id));
+    await db.removeSubject(id);
 }
 
 // Batches
 export async function addBatchAction(batch: Batch) {
-    await db.update('batches', (batches) => [...batches, batch]);
+    await db.addBatch(batch);
 }
 
 export async function removeBatchAction(id: string) {
-    await db.update('batches', (batches) => batches.filter((b) => b.id !== id));
+    await db.removeBatch(id);
 }
 
 // Schedule
 export async function saveScheduleAction(schedule: ScheduleEntry[]) {
-    await db.write({ ...(await db.read()), schedule });
+    await db.saveSchedule(schedule);
 }
 
 export async function updateConfigAction(config: SchedulerConfig) {
-    await db.write({ ...(await db.read()), config });
+    await db.updateConfig(config);
 }
