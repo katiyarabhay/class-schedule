@@ -7,7 +7,8 @@ import { Teacher } from '@/lib/types';
 import SplitButton from '@/components/SplitButton';
 import { parseCSV } from '@/lib/csvParser';
 import { useRef } from 'react';
-import styles from '@/app/page.module.css'; // Reuse or create new
+import styles from '@/app/page.module.css';
+import EditTeacherModal from '@/components/EditTeacherModal';
 
 export default function TeachersPage() {
     const { teachers, subjects, addTeacher, updateTeacher, removeTeacher } = useScheduler();
@@ -18,6 +19,9 @@ export default function TeachersPage() {
     });
     const [subjectCode1, setSubjectCode1] = useState('');
     const [subjectCode2, setSubjectCode2] = useState('');
+
+    const [editingTeacher, setEditingTeacher] = useState<Teacher | null>(null);
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -68,6 +72,7 @@ export default function TeachersPage() {
         if (!file) return;
 
         try {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const data = await parseCSV<any>(file);
             handleImport(data);
         } catch (err) {
@@ -77,10 +82,12 @@ export default function TeachersPage() {
         if (fileInputRef.current) fileInputRef.current.value = '';
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleImport = (data: any[]) => {
         let importedCount = 0;
         data.forEach(item => {
             // Normalize keys to lowercase to be safe
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const normalizedItem: any = {};
             Object.keys(item).forEach(k => normalizedItem[k.toLowerCase()] = item[k]);
 
@@ -259,16 +266,35 @@ export default function TeachersPage() {
 
                             <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <span style={{ fontSize: '0.8rem' }}>Load: {t.maxLoadPerWeek}/wk</span>
-                                <button
-                                    onClick={() => removeTeacher(t.id)}
-                                    style={{ background: 'transparent', border: '1px solid #ef4444', color: '#ef4444', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
-                                >
-                                    Remove
-                                </button>
+                                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                                    <button
+                                        onClick={() => {
+                                            setEditingTeacher(t);
+                                            setIsEditModalOpen(true);
+                                        }}
+                                        style={{ background: 'transparent', border: '1px solid var(--pk-accent)', color: 'var(--pk-accent)', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
+                                    >
+                                        Edit
+                                    </button>
+                                    <button
+                                        onClick={() => removeTeacher(t.id)}
+                                        style={{ background: 'transparent', border: '1px solid #ef4444', color: '#ef4444', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
+                                    >
+                                        Remove
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
+
+                <EditTeacherModal
+                    teacher={editingTeacher}
+                    isOpen={isEditModalOpen}
+                    onClose={() => setIsEditModalOpen(false)}
+                    onSave={updateTeacher}
+                    subjects={subjects}
+                />
             </main>
         </div>
     );

@@ -8,14 +8,18 @@ import SplitButton from '@/components/SplitButton';
 import { parseCSV } from '@/lib/csvParser';
 import { useRef } from 'react';
 import styles from '@/app/page.module.css';
+import EditClassroomModal from '@/components/EditClassroomModal';
 
 export default function ClassroomsPage() {
-    const { classrooms, addClassroom, removeClassroom } = useScheduler();
+    const { classrooms, addClassroom, updateClassroom, removeClassroom } = useScheduler();
     const [newRoom, setNewRoom] = useState<Partial<Classroom>>({
         name: '',
         capacity: 60,
         type: 'Theory',
     });
+
+    const [editingClassroom, setEditingClassroom] = useState<Classroom | null>(null);
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -35,6 +39,7 @@ export default function ClassroomsPage() {
         if (!file) return;
 
         try {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const data = await parseCSV<any>(file);
             handleImport(data);
         } catch (err) {
@@ -44,6 +49,7 @@ export default function ClassroomsPage() {
         if (fileInputRef.current) fileInputRef.current.value = '';
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleImport = (data: any[]) => {
         data.forEach(item => {
             const room: Classroom = {
@@ -128,7 +134,16 @@ export default function ClassroomsPage() {
                                 </span>
                             </div>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem', marginTop: '0.5rem' }}>Capacity: {c.capacity}</p>
-                            <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'flex-end' }}>
+                            <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+                                <button
+                                    onClick={() => {
+                                        setEditingClassroom(c);
+                                        setIsEditModalOpen(true);
+                                    }}
+                                    style={{ background: 'transparent', border: '1px solid var(--pk-accent)', color: 'var(--pk-accent)', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
+                                >
+                                    Edit
+                                </button>
                                 <button
                                     onClick={() => removeClassroom(c.id)}
                                     style={{ background: 'transparent', border: '1px solid #ef4444', color: '#ef4444', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
@@ -139,6 +154,13 @@ export default function ClassroomsPage() {
                         </div>
                     ))}
                 </div>
+
+                <EditClassroomModal
+                    classroom={editingClassroom}
+                    isOpen={isEditModalOpen}
+                    onClose={() => setIsEditModalOpen(false)}
+                    onSave={updateClassroom}
+                />
             </main>
         </div>
     );

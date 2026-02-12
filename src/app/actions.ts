@@ -29,6 +29,10 @@ export async function removeClassroomAction(id: string) {
     await db.update('classrooms', (classrooms) => classrooms.filter((c) => c.id !== id));
 }
 
+export async function updateClassroomAction(classroom: Classroom) {
+    await db.update('classrooms', (classrooms) => classrooms.map((c) => c.id === classroom.id ? classroom : c));
+}
+
 // Subjects
 export async function addSubjectAction(subject: Subject) {
     await db.update('subjects', (subjects) => [...subjects, subject]);
