@@ -8,15 +8,19 @@ import SplitButton from '@/components/SplitButton';
 import { parseCSV } from '@/lib/csvParser';
 import { useRef } from 'react';
 import styles from '@/app/page.module.css';
+import EditSubjectModal from '@/components/EditSubjectModal';
 
 export default function SubjectsPage() {
-    const { subjects, addSubject, removeSubject } = useScheduler();
+    const { subjects, addSubject, updateSubject, removeSubject } = useScheduler();
     const [newSubject, setNewSubject] = useState<Partial<Subject>>({
         name: '',
         code: '',
         type: 'Theory',
         credits: 3,
     });
+
+    const [editingSubject, setEditingSubject] = useState<Subject | null>(null);
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -143,7 +147,16 @@ export default function SubjectsPage() {
                             </div>
                             <p style={{ fontWeight: 600 }}>{s.name}</p>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>Hours/Week: {s.credits}</p>
-                            <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'flex-end' }}>
+                            <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+                                <button
+                                    onClick={() => {
+                                        setEditingSubject(s);
+                                        setIsEditModalOpen(true);
+                                    }}
+                                    style={{ background: 'transparent', border: '1px solid var(--pk-accent)', color: 'var(--pk-accent)', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
+                                >
+                                    Edit
+                                </button>
                                 <button
                                     onClick={() => removeSubject(s.id)}
                                     style={{ background: 'transparent', border: '1px solid #ef4444', color: '#ef4444', padding: '0.25rem 0.5rem', borderRadius: '4px', cursor: 'pointer' }}
@@ -154,6 +167,13 @@ export default function SubjectsPage() {
                         </div>
                     ))}
                 </div>
+
+                <EditSubjectModal
+                    subject={editingSubject}
+                    isOpen={isEditModalOpen}
+                    onClose={() => setIsEditModalOpen(false)}
+                    onSave={updateSubject}
+                />
             </main >
         </div >
     );

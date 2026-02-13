@@ -2,576 +2,362 @@
   "subjects": [
     {
       "id": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "name": "Mathematics (Sem 1)",
-      "code": "SUB-101",
+      "name": "Data Structures",
+      "code": "BCS-301",
       "type": "Theory",
-      "credits": 4,
+      "credits": 5,
       "requiredBatches": []
     },
     {
       "id": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "name": "Physics (Sem 1)",
-      "code": "SUB-102",
+      "name": "Computer Organization & Architecture",
+      "code": "BCS-302",
       "type": "Theory",
-      "credits": 4,
+      "credits": 5,
       "requiredBatches": []
     },
     {
       "id": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "name": "Digital Electronics (Sem 1)",
-      "code": "SUB-103",
+      "name": "Discrete Structure & Theory of Logic",
+      "code": "BCS-303",
       "type": "Theory",
-      "credits": 4,
+      "credits": 5,
       "requiredBatches": []
     },
     {
       "id": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "name": "C Programming (Sem 1)",
-      "code": "SUB-104",
+      "name": "Data Structure Lab ",
+      "code": "BCS-351",
       "type": "Theory",
-      "credits": 4,
+      "credits": 3,
       "requiredBatches": []
     },
     {
       "id": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "name": "Communication Skills (Sem 1)",
-      "code": "SUB-105",
+      "name": "Technical Communication ",
+      "code": "BAS-301",
+      "type": "Theory",
+      "credits": 3,
+      "requiredBatches": []
+    },
+    {
+      "id": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "name": "Hackathon Teaching ",
+      "code": "TT-HT-3",
       "type": "Lab",
       "credits": 2,
       "requiredBatches": []
     },
     {
-      "id": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "name": "Data Structures (Sem 3)",
-      "code": "SUB-301",
-      "type": "Theory",
-      "credits": 4,
-      "requiredBatches": []
-    },
-    {
       "id": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "name": "Java (Sem 3)",
-      "code": "SUB-302",
+      "name": "Hackathon Discussion ",
+      "code": "TT-HD-3",
       "type": "Theory",
-      "credits": 4,
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "name": "Operating Systems (Sem 3)",
-      "code": "SUB-303",
+      "name": "Verbal Training ",
+      "code": "VT-301",
       "type": "Theory",
-      "credits": 4,
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "name": "Computer Networks (Sem 3)",
-      "code": "SUB-304",
-      "type": "Theory",
-      "credits": 4,
+      "name": "Online Test ",
+      "code": "TR-OLT ",
+      "type": "Lab",
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "name": "DBMS (Sem 3)",
-      "code": "SUB-305",
+      "name": "Hackathon ",
+      "code": "TT-H-3",
       "type": "Lab",
       "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "name": "Web Tech (Sem 5)",
-      "code": "SUB-501",
+      "name": "Python Programming",
+      "code": "TT-Python-301",
       "type": "Theory",
-      "credits": 4,
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "name": "Software Eng (Sem 5)",
-      "code": "SUB-502",
-      "type": "Theory",
-      "credits": 4,
-      "requiredBatches": []
-    },
-    {
-      "id": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "name": "AI (Sem 5)",
-      "code": "SUB-503",
-      "type": "Theory",
-      "credits": 4,
-      "requiredBatches": []
-    },
-    {
-      "id": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "name": "Cloud Computing (Sem 5)",
-      "code": "SUB-504",
-      "type": "Theory",
-      "credits": 4,
-      "requiredBatches": []
-    },
-    {
-      "id": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "name": "Information Security (Sem 5)",
-      "code": "SUB-505",
+      "name": "Technical & Corporate Training ",
+      "code": "TR-OLT-301",
       "type": "Lab",
       "credits": 2,
       "requiredBatches": []
     },
     {
-      "id": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "name": "Placement Training",
-      "code": "TRN-001",
+      "id": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "name": "FSD",
+      "code": "TT-FSD-301",
+      "type": "Lab",
+      "credits": 2,
+      "requiredBatches": []
+    },
+    {
+      "id": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "name": "Digital Electronics ",
+      "code": "BOE-310",
       "type": "Theory",
-      "credits": 8,
+      "credits": 2,
+      "requiredBatches": []
+    },
+    {
+      "id": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "name": "Database Management System ",
+      "code": "TT-DBMS-301",
+      "type": "Theory",
+      "credits": 2,
+      "requiredBatches": []
+    },
+    {
+      "id": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
+      "name": "OLT",
+      "code": "TT-OLT-D-301",
+      "type": "Lab",
+      "credits": 1,
       "requiredBatches": []
     },
     {
       "id": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "name": "Soft Skills",
-      "code": "TRN-002",
-      "type": "Theory",
-      "credits": 4,
+      "name": "Internship Assessment / Mini Project",
+      "code": "BCC-351",
+      "type": "Lab",
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "name": "OLT",
-      "code": "OLT-001",
+      "name": "Computer Organization & Lab  ",
+      "code": "BCS-352",
       "type": "Lab",
-      "credits": 6,
+      "credits": 2,
       "requiredBatches": []
     },
     {
       "id": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "name": "Hackathon",
-      "code": "HCK-001",
-      "type": "Lab",
-      "credits": 4,
+      "name": "Cyber Security",
+      "code": "BCC-301",
+      "type": "Theory",
+      "credits": 2,
       "requiredBatches": []
     }
   ],
   "teachers": [
     {
-      "id": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "name": "Prof. Amit Sharma",
+      "id": "FC22068",
+      "name": "Mohd.Mohsin Ali",
       "department": "CS",
       "qualifiedSubjects": [
         "859c2ee5-1dc3-4f1a-ab05-faaede517b86"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "name": "Prof. Priya Singh",
-      "department": "CS",
-      "qualifiedSubjects": [
-        "eb5a0279-c63d-4c55-a346-f14d88b452e7"
-      ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "name": "Prof. Rohan Gupta",
+      "id": "FC25081",
+      "name": "Chandrashekhar Tiwari ",
       "department": "CS",
       "qualifiedSubjects": [
         "a29be1dc-a55d-4236-a2e4-eabf7412f370"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "name": "Prof. Sneha Patel",
+      "id": "FC24080",
+      "name": "Yogita Gupta",
+      "department": "CS",
+      "qualifiedSubjects": [
+        "eb5a0279-c63d-4c55-a346-f14d88b452e7"
+      ],
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
+    },
+    {
+      "id": "FC22092",
+      "name": "Shashi Mishra",
       "department": "CS",
       "qualifiedSubjects": [
         "2270476c-8543-41f6-9b58-1877cfa0cdb1"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "name": "Prof. Vikram Verma",
+      "id": "FC19085",
+      "name": "Smita Mishra",
       "department": "CS",
       "qualifiedSubjects": [
         "f4c82624-0e2b-4f90-b44e-100d68a1a0f2"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "name": "Prof. Anjali Das",
+      "id": "FC23034",
+      "name": "Sunil Kumar Vishwakarma",
       "department": "CS",
       "qualifiedSubjects": [
+        "71503d7f-a6f4-4767-8d00-e1eba35b2870",
         "1eea3e1f-1e62-46c4-b75f-73c2cef8943f"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "name": "Prof. Rahul Kumar",
-      "department": "CS",
-      "qualifiedSubjects": [
-        "71503d7f-a6f4-4767-8d00-e1eba35b2870"
-      ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "name": "Prof. Kavita Reddy",
+      "id": "TR23024",
+      "name": "Seshu.S",
       "department": "CS",
       "qualifiedSubjects": [
         "a27a3aa3-8525-4210-9209-d48228d22249"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "name": "Prof. Arjun Nair",
+      "id": "TR25033",
+      "name": "Venu Gopal Rai ",
       "department": "CS",
       "qualifiedSubjects": [
-        "3f2353ac-1885-4c08-af9b-5910eb669352"
+        "a27a3aa3-8525-4210-9209-d48228d22249"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 12
     },
     {
-      "id": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "name": "Prof. Meera Joshi",
+      "id": "FC24106",
+      "name": "Shruti Singh",
+      "department": "CS",
+      "qualifiedSubjects": [
+        "fbbcf53b-f799-45ba-b702-70a29d87886f",
+        "aac74e2c-0597-40eb-a2b8-3825edfb6da6"
+      ],
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 12
+    },
+    {
+      "id": "FC24063",
+      "name": "Vikarm Pratap Singh ",
       "department": "CS",
       "qualifiedSubjects": [
         "aac74e2c-0597-40eb-a2b8-3825edfb6da6"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "name": "Prof. Suresh Iyer",
+      "id": "FC23106",
+      "name": "Shubhangi Sankhyadhar",
       "department": "CS",
       "qualifiedSubjects": [
-        "5c608595-ac43-4d9a-b193-711086b59bc3"
+        "5c608595-ac43-4d9a-b193-711086b59bc3",
+        "f884d922-8f76-4ca1-a010-3db4fc626b4f"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "name": "Prof. Neha Malhotra",
+      "id": "FC25066",
+      "name": "Anshita Singh ",
       "department": "CS",
       "qualifiedSubjects": [
-        "fbbcf53b-f799-45ba-b702-70a29d87886f"
+        "aac74e2c-0597-40eb-a2b8-3825edfb6da6"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "name": "Prof. Rajesh Khanna",
-      "department": "CS",
-      "qualifiedSubjects": [
-        "e5fe1590-759d-4567-af29-ed41a0498453"
-      ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "8e125509-bf52-4350-b016-0e7338987360",
-      "name": "Prof. Pooja Hegde",
-      "department": "CS",
-      "qualifiedSubjects": [
-        "de96bd96-d1d9-4f6d-a3ab-9847cd453556"
-      ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "name": "Prof. Vivek Oberoi",
+      "id": "FC23102",
+      "name": "Ashish Kumar Singh ",
       "department": "CS",
       "qualifiedSubjects": [
         "a487502b-d486-40b2-8078-84eda1fdce37"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "name": "Prof. Teacher 16",
+      "id": "FC24144",
+      "name": "Syed Hussain Rizvi",
       "department": "CS",
       "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f"
+        "e5fe1590-759d-4567-af29-ed41a0498453",
+        "81311e0d-b725-40ec-abc3-94fa2076736c"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "name": "Prof. Teacher 17",
+      "id": "FC11058",
+      "name": "Sudhir Kumar Singh ",
+      "department": "CS",
+      "qualifiedSubjects": [
+        "de96bd96-d1d9-4f6d-a3ab-9847cd453556"
+      ],
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
+    },
+    {
+      "id": "FC24088",
+      "name": "Mohd. Aquib",
       "department": "CS",
       "qualifiedSubjects": [
         "8a8af0a7-c981-486c-a0a8-65f666b489bf"
       ],
-      "maxLoadPerDay": 3,
-      "maxLoadPerWeek": 15,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "210ab952-a44f-4718-8172-3692c05daca2",
-      "name": "Trainer 1",
-      "department": "Training",
+      "id": "FC18007",
+      "name": "Manish Kumar ",
+      "department": "CS",
       "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
+        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd"
       ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     },
     {
-      "id": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "name": "Trainer 2",
-      "department": "Training",
+      "id": "FC2080",
+      "name": "Durgesh Pandey ",
+      "department": "CS",
       "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
+        "8a8af0a7-c981-486c-a0a8-65f666b489bf"
       ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "03764cca-ac74-4c10-904d-732577deb875",
-      "name": "Trainer 3",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "name": "Trainer 4",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "name": "Trainer 5",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "name": "Trainer 6",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "name": "Trainer 7",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "name": "Trainer 8",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "name": "Trainer 9",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
-    },
-    {
-      "id": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "name": "Trainer 10",
-      "department": "Training",
-      "qualifiedSubjects": [
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ],
-      "maxLoadPerDay": 6,
-      "maxLoadPerWeek": 30,
-      "preferredSlots": [],
-      "unavailableSlots": []
+      "maxLoadPerDay": 4,
+      "maxLoadPerWeek": 18
     }
   ],
   "batches": [
     {
-      "id": "7fce3006-22ef-4476-ba2d-22f9d447ffc4",
-      "name": "BCA 1A",
+      "id": "51db5479-1ea1-4b26-b510-79ee1e640300",
+      "name": "AI/ML-2B",
       "size": 60,
-      "department": "BCA",
+      "department": "CS",
       "requiredSubjects": [
-        "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
         "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-        "a29be1dc-a55d-4236-a2e4-eabf7412f370",
         "2270476c-8543-41f6-9b58-1877cfa0cdb1",
         "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ]
-    },
-    {
-      "id": "2f2e88a6-3825-4d27-9b42-66d4fb0c4894",
-      "name": "BCA 1B",
-      "size": 60,
-      "department": "BCA",
-      "requiredSubjects": [
-        "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-        "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-        "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-        "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-        "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ]
-    },
-    {
-      "id": "9b8bfc08-42af-498d-96b3-7e32f42e8699",
-      "name": "BCA 1C",
-      "size": 60,
-      "department": "BCA",
-      "requiredSubjects": [
-        "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-        "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-        "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-        "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-        "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ]
-    },
-    {
-      "id": "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a",
-      "name": "BCA 3A",
-      "size": 60,
-      "department": "BCA",
-      "requiredSubjects": [
         "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
         "71503d7f-a6f4-4767-8d00-e1eba35b2870",
         "a27a3aa3-8525-4210-9209-d48228d22249",
-        "3f2353ac-1885-4c08-af9b-5910eb669352",
         "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+        "5c608595-ac43-4d9a-b193-711086b59bc3",
+        "fbbcf53b-f799-45ba-b702-70a29d87886f",
+        "a487502b-d486-40b2-8078-84eda1fdce37",
+        "e5fe1590-759d-4567-af29-ed41a0498453",
+        "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
         "f884d922-8f76-4ca1-a010-3db4fc626b4f",
         "8a8af0a7-c981-486c-a0a8-65f666b489bf",
         "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
@@ -579,16 +365,23 @@
       ]
     },
     {
-      "id": "d0da38ff-0860-48f3-919d-9a008fc65d8d",
-      "name": "BCA 3B",
+      "id": "f4f89976-e756-4870-82bf-65bee4824ba1",
+      "name": "AI/ML-2C",
       "size": 60,
-      "department": "BCA",
+      "department": "CS",
       "requiredSubjects": [
+        "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+        "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+        "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
         "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
         "71503d7f-a6f4-4767-8d00-e1eba35b2870",
         "a27a3aa3-8525-4210-9209-d48228d22249",
-        "3f2353ac-1885-4c08-af9b-5910eb669352",
         "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+        "5c608595-ac43-4d9a-b193-711086b59bc3",
+        "fbbcf53b-f799-45ba-b702-70a29d87886f",
+        "a487502b-d486-40b2-8078-84eda1fdce37",
+        "e5fe1590-759d-4567-af29-ed41a0498453",
+        "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
         "f884d922-8f76-4ca1-a010-3db4fc626b4f",
         "8a8af0a7-c981-486c-a0a8-65f666b489bf",
         "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
@@ -596,16 +389,23 @@
       ]
     },
     {
-      "id": "22e85303-11fb-468b-886b-4d238b227f28",
-      "name": "BCA 3C",
+      "id": "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf",
+      "name": "AI/ML-2D",
       "size": 60,
-      "department": "BCA",
+      "department": "CS",
       "requiredSubjects": [
+        "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+        "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+        "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
         "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
         "71503d7f-a6f4-4767-8d00-e1eba35b2870",
         "a27a3aa3-8525-4210-9209-d48228d22249",
-        "3f2353ac-1885-4c08-af9b-5910eb669352",
         "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+        "5c608595-ac43-4d9a-b193-711086b59bc3",
+        "fbbcf53b-f799-45ba-b702-70a29d87886f",
+        "a487502b-d486-40b2-8078-84eda1fdce37",
+        "e5fe1590-759d-4567-af29-ed41a0498453",
+        "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
         "f884d922-8f76-4ca1-a010-3db4fc626b4f",
         "8a8af0a7-c981-486c-a0a8-65f666b489bf",
         "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
@@ -613,50 +413,23 @@
       ]
     },
     {
-      "id": "d0fe09d3-5370-4e6d-984a-3c92e6b07d71",
-      "name": "BCA 5A",
+      "id": "3dd00b50-442d-41ff-b002-123a7480dd0b",
+      "name": "AL/ML-2E",
       "size": 60,
-      "department": "BCA",
+      "department": "CS",
       "requiredSubjects": [
+        "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+        "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+        "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+        "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+        "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+        "a27a3aa3-8525-4210-9209-d48228d22249",
+        "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
         "5c608595-ac43-4d9a-b193-711086b59bc3",
         "fbbcf53b-f799-45ba-b702-70a29d87886f",
+        "a487502b-d486-40b2-8078-84eda1fdce37",
         "e5fe1590-759d-4567-af29-ed41a0498453",
         "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-        "a487502b-d486-40b2-8078-84eda1fdce37",
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ]
-    },
-    {
-      "id": "eb6c7fb1-4ecf-49c3-9735-4beb4a923036",
-      "name": "BCA 5B",
-      "size": 60,
-      "department": "BCA",
-      "requiredSubjects": [
-        "5c608595-ac43-4d9a-b193-711086b59bc3",
-        "fbbcf53b-f799-45ba-b702-70a29d87886f",
-        "e5fe1590-759d-4567-af29-ed41a0498453",
-        "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-        "a487502b-d486-40b2-8078-84eda1fdce37",
-        "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-        "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-        "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-        "81311e0d-b725-40ec-abc3-94fa2076736c"
-      ]
-    },
-    {
-      "id": "ce688b35-b4f3-4a2f-8e85-5b05ae62f261",
-      "name": "BCA 5C",
-      "size": 60,
-      "department": "BCA",
-      "requiredSubjects": [
-        "5c608595-ac43-4d9a-b193-711086b59bc3",
-        "fbbcf53b-f799-45ba-b702-70a29d87886f",
-        "e5fe1590-759d-4567-af29-ed41a0498453",
-        "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-        "a487502b-d486-40b2-8078-84eda1fdce37",
         "f884d922-8f76-4ca1-a010-3db4fc626b4f",
         "8a8af0a7-c981-486c-a0a8-65f666b489bf",
         "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
@@ -666,135 +439,45 @@
   ],
   "classrooms": [
     {
-      "id": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "name": "Room 101",
-      "capacity": 70,
+      "id": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "name": "A-31",
+      "capacity": 60,
       "type": "Theory"
     },
     {
-      "id": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "name": "Room 102",
-      "capacity": 70,
+      "id": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "name": "A-32",
+      "capacity": 60,
       "type": "Theory"
     },
     {
-      "id": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "name": "Room 103",
-      "capacity": 70,
+      "id": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "name": "A-33",
+      "capacity": 60,
       "type": "Theory"
     },
     {
-      "id": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "name": "Room 104",
-      "capacity": 70,
+      "id": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "name": "A-34",
+      "capacity": 60,
       "type": "Theory"
     },
     {
-      "id": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "name": "Room 105",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "name": "Room 106",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "name": "Room 107",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "name": "Room 108",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "name": "Room 109",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "name": "Room 110",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "name": "Room 111",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "name": "Room 112",
-      "capacity": 70,
-      "type": "Theory"
-    },
-    {
-      "id": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "name": "Lab 1",
-      "capacity": 70,
+      "id": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "name": "LAB-11,12",
+      "capacity": 120,
       "type": "Lab"
     },
     {
-      "id": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "name": "Lab 2",
-      "capacity": 70,
+      "id": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "name": "LAB-21,22",
+      "capacity": 120,
       "type": "Lab"
     },
     {
-      "id": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "name": "Lab 3",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "name": "Lab 4",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "name": "Lab 5",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "name": "Lab 6",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "name": "Lab 7",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "name": "Lab 8",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "name": "Lab 9",
-      "capacity": 70,
-      "type": "Lab"
-    },
-    {
-      "id": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "name": "Lab 10",
-      "capacity": 70,
+      "id": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "name": "LAB-31,33",
+      "capacity": 120,
       "type": "Lab"
     }
   ],
@@ -806,3969 +489,1769 @@
       "Thursday",
       "Friday"
     ],
-    "slotsPerDay": 9,
+    "slotsPerDay": 8,
     "breakAfter": 4
   },
   "schedule": [
     {
       "id": "sched_0",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_1",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Wednesday",
+      "day": "Thursday",
       "period": 3
     },
     {
-      "id": "sched_2",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "id": "sched_1",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Thursday",
-      "period": 4
+      "day": "Wednesday",
+      "period": 1
+    },
+    {
+      "id": "sched_2",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Monday",
+      "period": 7
     },
     {
       "id": "sched_3",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Tuesday",
-      "period": 1
+      "day": "Wednesday",
+      "period": 3
     },
     {
       "id": "sched_4",
       "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Wednesday",
-      "period": 9
+      "period": 6
     },
     {
       "id": "sched_5",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Tuesday",
-      "period": 4
+      "day": "Friday",
+      "period": 8
     },
     {
       "id": "sched_6",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Monday",
-      "period": 1
+      "day": "Tuesday",
+      "period": 2
     },
     {
       "id": "sched_7",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Wednesday",
+      "period": 7
+    },
+    {
+      "id": "sched_8",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Wednesday",
+      "period": 4
+    },
+    {
+      "id": "sched_9",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Wednesday",
       "period": 5
     },
     {
-      "id": "sched_8",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_9",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Friday",
-      "period": 4
-    },
-    {
       "id": "sched_10",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Tuesday",
-      "period": 5
+      "day": "Monday",
+      "period": 2
     },
     {
       "id": "sched_11",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Monday",
+      "period": 8
+    },
+    {
+      "id": "sched_12",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Friday",
+      "period": 6
+    },
+    {
+      "id": "sched_13",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Thursday",
+      "period": 7
+    },
+    {
+      "id": "sched_14",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Monday",
       "period": 3
     },
     {
-      "id": "sched_12",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_13",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_14",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
       "id": "sched_15",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR23024",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Monday",
-      "period": 8
+      "period": 5
     },
     {
       "id": "sched_16",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR23024",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Monday",
-      "period": 6
+      "day": "Thursday",
+      "period": 4
     },
     {
       "id": "sched_17",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC24063",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Monday",
-      "period": 7
+      "day": "Tuesday",
+      "period": 3
     },
     {
       "id": "sched_18",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC24063",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Friday",
-      "period": 8
+      "day": "Thursday",
+      "period": 1
     },
     {
       "id": "sched_19",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Thursday",
-      "period": 2
+      "day": "Friday",
+      "period": 3
     },
     {
       "id": "sched_20",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Wednesday",
-      "period": 4
+      "day": "Thursday",
+      "period": 8
     },
     {
       "id": "sched_21",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_22",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_23",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Thursday",
       "period": 7
     },
     {
-      "id": "sched_24",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
+      "id": "sched_22",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Monday",
-      "period": 2
+      "day": "Friday",
+      "period": 4
     },
     {
-      "id": "sched_25",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
+      "id": "sched_23",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Monday",
+      "period": 4
+    },
+    {
+      "id": "sched_24",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Tuesday",
       "period": 8
     },
     {
-      "id": "sched_26",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
+      "id": "sched_25",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Thursday",
+      "period": 5
+    },
+    {
+      "id": "sched_26",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Monday",
-      "period": 4
+      "period": 1
     },
     {
       "id": "sched_27",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Friday",
+      "day": "Tuesday",
       "period": 7
     },
     {
       "id": "sched_28",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Tuesday",
-      "period": 9
+      "day": "Wednesday",
+      "period": 8
     },
     {
       "id": "sched_29",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
+      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
+      "teacherId": "FC23106",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
       "day": "Thursday",
       "period": 6
     },
     {
       "id": "sched_30",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
+      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
+      "teacherId": "FC2080",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Thursday",
-      "period": 3
+      "day": "Wednesday",
+      "period": 2
     },
     {
       "id": "sched_31",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
+      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
+      "teacherId": "FC2080",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Monday",
-      "period": 9
+      "day": "Friday",
+      "period": 1
     },
     {
       "id": "sched_32",
       "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
+      "teacherId": "FC18007",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Thursday",
-      "period": 8
+      "day": "Friday",
+      "period": 2
     },
     {
       "id": "sched_33",
       "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
+      "teacherId": "FC18007",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Wednesday",
-      "period": 1
+      "day": "Tuesday",
+      "period": 4
     },
     {
       "id": "sched_34",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Thursday",
+      "day": "Tuesday",
       "period": 5
     },
     {
       "id": "sched_35",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Friday",
-      "period": 3
+      "day": "Tuesday",
+      "period": 6
     },
     {
       "id": "sched_36",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Wednesday",
+      "period": 2
+    },
+    {
+      "id": "sched_37",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Monday",
+      "period": 2
+    },
+    {
+      "id": "sched_38",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Friday",
+      "period": 1
+    },
+    {
+      "id": "sched_39",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Wednesday",
+      "period": 4
+    },
+    {
+      "id": "sched_40",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Monday",
       "period": 5
     },
     {
-      "id": "sched_37",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
+      "id": "sched_41",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_38",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Friday",
+      "day": "Wednesday",
       "period": 6
     },
     {
-      "id": "sched_39",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "7fce3006-22ef-4476-ba2d-22f9d447ffc4"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_40",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_41",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
       "id": "sched_42",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Thursday",
+      "day": "Tuesday",
       "period": 3
     },
     {
       "id": "sched_43",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_44",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_45",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_46",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_47",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_48",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Wednesday",
-      "period": 7
-    },
-    {
-      "id": "sched_49",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Thursday",
       "period": 1
     },
     {
-      "id": "sched_50",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "id": "sched_44",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Friday",
+      "day": "Tuesday",
+      "period": 1
+    },
+    {
+      "id": "sched_45",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Tuesday",
       "period": 6
     },
     {
-      "id": "sched_51",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
+      "id": "sched_46",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Monday",
-      "period": 9
-    },
-    {
-      "id": "sched_52",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_53",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Thursday",
+      "day": "Tuesday",
       "period": 7
     },
     {
-      "id": "sched_54",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
+      "id": "sched_47",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_55",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_56",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_57",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_58",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_59",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_60",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Friday",
       "period": 5
     },
     {
-      "id": "sched_61",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "id": "sched_48",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
+      "period": 5
+    },
+    {
+      "id": "sched_49",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
+      "period": 4
+    },
+    {
+      "id": "sched_50",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Friday",
+      "period": 7
+    },
+    {
+      "id": "sched_51",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR25033",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Wednesday",
       "period": 8
     },
     {
-      "id": "sched_62",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "id": "sched_52",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR25033",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Tuesday",
+      "period": 4
+    },
+    {
+      "id": "sched_53",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC25066",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Wednesday",
+      "period": 3
+    },
+    {
+      "id": "sched_54",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC25066",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Tuesday",
+      "period": 2
+    },
+    {
+      "id": "sched_55",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Monday",
+      "period": 8
+    },
+    {
+      "id": "sched_56",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Monday",
+      "period": 1
+    },
+    {
+      "id": "sched_57",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Friday",
+      "period": 6
+    },
+    {
+      "id": "sched_58",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
+      "period": 2
+    },
+    {
+      "id": "sched_59",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
       "period": 7
+    },
+    {
+      "id": "sched_60",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
+      "period": 6
+    },
+    {
+      "id": "sched_61",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Monday",
+      "period": 4
+    },
+    {
+      "id": "sched_62",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Thursday",
+      "period": 3
     },
     {
       "id": "sched_63",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Wednesday",
-      "period": 5
+      "day": "Thursday",
+      "period": 8
     },
     {
       "id": "sched_64",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Tuesday",
-      "period": 7
+      "day": "Friday",
+      "period": 8
     },
     {
       "id": "sched_65",
       "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "teacherId": "FC23106",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Tuesday",
-      "period": 6
+      "period": 8
     },
     {
       "id": "sched_66",
       "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "teacherId": "FC24088",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Wednesday",
-      "period": 6
+      "period": 1
     },
     {
       "id": "sched_67",
       "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
+      "teacherId": "FC24088",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Friday",
-      "period": 9
+      "day": "Monday",
+      "period": 3
     },
     {
       "id": "sched_68",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Wednesday",
-      "period": 3
+      "day": "Tuesday",
+      "period": 5
     },
     {
       "id": "sched_69",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Tuesday",
-      "period": 1
+      "day": "Monday",
+      "period": 6
     },
     {
       "id": "sched_70",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Monday",
-      "period": 2
+      "day": "Wednesday",
+      "period": 5
     },
     {
       "id": "sched_71",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Wednesday",
-      "period": 4
+      "period": 7
     },
     {
       "id": "sched_72",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Tuesday",
-      "period": 4
+      "day": "Wednesday",
+      "period": 7
     },
     {
       "id": "sched_73",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Tuesday",
-      "period": 8
+      "period": 6
     },
     {
       "id": "sched_74",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Monday",
-      "period": 4
+      "day": "Tuesday",
+      "period": 2
     },
     {
       "id": "sched_75",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Friday",
-      "period": 3
+      "day": "Thursday",
+      "period": 1
     },
     {
       "id": "sched_76",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Monday",
+      "day": "Wednesday",
       "period": 5
     },
     {
       "id": "sched_77",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Monday",
-      "period": 7
+      "day": "Thursday",
+      "period": 4
     },
     {
       "id": "sched_78",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Thursday",
-      "period": 5
+      "day": "Monday",
+      "period": 4
     },
     {
       "id": "sched_79",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "2f2e88a6-3825-4d27-9b42-66d4fb0c4894"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Monday",
+      "day": "Wednesday",
       "period": 1
     },
     {
       "id": "sched_80",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Wednesday",
-      "period": 4
+      "day": "Friday",
+      "period": 3
     },
     {
       "id": "sched_81",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Wednesday",
-      "period": 5
+      "day": "Monday",
+      "period": 6
     },
     {
       "id": "sched_82",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Thursday",
-      "period": 7
+      "day": "Monday",
+      "period": 3
     },
     {
       "id": "sched_83",
-      "subjectId": "859c2ee5-1dc3-4f1a-ab05-faaede517b86",
-      "teacherId": "5eb80caa-1f86-4761-a25d-60ef099b7123",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Wednesday",
-      "period": 8
+      "day": "Monday",
+      "period": 2
     },
     {
       "id": "sched_84",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Tuesday",
-      "period": 7
+      "day": "Friday",
+      "period": 4
     },
     {
       "id": "sched_85",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Tuesday",
+      "day": "Wednesday",
       "period": 8
     },
     {
       "id": "sched_86",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Monday",
-      "period": 4
+      "day": "Tuesday",
+      "period": 5
     },
     {
       "id": "sched_87",
-      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
-      "teacherId": "95f01762-9bc4-4c62-88d3-13b01a15a258",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR23024",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Thursday",
-      "period": 6
+      "day": "Tuesday",
+      "period": 8
     },
     {
       "id": "sched_88",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR23024",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_89",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_90",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_91",
-      "subjectId": "a29be1dc-a55d-4236-a2e4-eabf7412f370",
-      "teacherId": "43048549-8dac-49d9-af0a-ca0a2b5e4b75",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Wednesday",
       "period": 2
     },
     {
-      "id": "sched_92",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "id": "sched_89",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC24063",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_93",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Friday",
       "period": 7
     },
     {
-      "id": "sched_94",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
+      "id": "sched_90",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC24063",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Thursday",
-      "period": 4
+      "day": "Friday",
+      "period": 5
     },
     {
-      "id": "sched_95",
-      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
-      "teacherId": "92672688-bbee-40b2-8d90-7f089b09a948",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "id": "sched_91",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Monday",
-      "period": 1
-    },
-    {
-      "id": "sched_96",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_97",
-      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
-      "teacherId": "25e41cce-d8dc-4b7f-82d5-105fd3e77689",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_98",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Friday",
       "period": 6
     },
     {
-      "id": "sched_99",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
+      "id": "sched_92",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Tuesday",
+      "period": 1
+    },
+    {
+      "id": "sched_93",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Thursday",
+      "period": 3
+    },
+    {
+      "id": "sched_94",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Thursday",
+      "period": 6
+    },
+    {
+      "id": "sched_95",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Thursday",
+      "period": 2
+    },
+    {
+      "id": "sched_96",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Monday",
-      "period": 5
+      "period": 8
+    },
+    {
+      "id": "sched_97",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Monday",
+      "period": 7
+    },
+    {
+      "id": "sched_98",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Friday",
+      "period": 1
+    },
+    {
+      "id": "sched_99",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Wednesday",
+      "period": 6
     },
     {
       "id": "sched_100",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Tuesday",
-      "period": 9
+      "day": "Friday",
+      "period": 2
     },
     {
       "id": "sched_101",
       "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "teacherId": "FC23106",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Thursday",
-      "period": 5
+      "day": "Wednesday",
+      "period": 3
     },
     {
       "id": "sched_102",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
+      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
+      "teacherId": "FC2080",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_103",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Tuesday",
       "period": 4
     },
     {
-      "id": "sched_104",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_105",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_106",
+      "id": "sched_103",
       "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "teacherId": "FC2080",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
-      "day": "Wednesday",
+      "day": "Tuesday",
       "period": 7
     },
     {
-      "id": "sched_107",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "id": "sched_104",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Wednesday",
+      "period": 4
+    },
+    {
+      "id": "sched_105",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Thursday",
+      "period": 7
+    },
+    {
+      "id": "sched_106",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Friday",
+      "period": 8
+    },
+    {
+      "id": "sched_107",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
+      ],
+      "day": "Tuesday",
       "period": 3
     },
     {
       "id": "sched_108",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
-      "day": "Tuesday",
+      "day": "Friday",
       "period": 5
     },
     {
       "id": "sched_109",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
-      "day": "Monday",
-      "period": 7
+      "day": "Tuesday",
+      "period": 8
     },
     {
       "id": "sched_110",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Monday",
-      "period": 9
+      "period": 4
     },
     {
       "id": "sched_111",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_112",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_113",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_114",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_115",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_116",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_117",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_118",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
-      ],
-      "day": "Wednesday",
       "period": 6
     },
     {
-      "id": "sched_119",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
+      "id": "sched_112",
+      "subjectId": "eb5a0279-c63d-4c55-a346-f14d88b452e7",
+      "teacherId": "FC24080",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "9b8bfc08-42af-498d-96b3-7e32f42e8699"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Tuesday",
+      "period": 3
+    },
+    {
+      "id": "sched_113",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Thursday",
+      "period": 7
+    },
+    {
+      "id": "sched_114",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
+      "period": 6
+    },
+    {
+      "id": "sched_115",
+      "subjectId": "2270476c-8543-41f6-9b58-1877cfa0cdb1",
+      "teacherId": "FC22092",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
+      "period": 2
+    },
+    {
+      "id": "sched_116",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Tuesday",
+      "period": 5
+    },
+    {
+      "id": "sched_117",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
+      "period": 5
+    },
+    {
+      "id": "sched_118",
+      "subjectId": "f4c82624-0e2b-4f90-b44e-100d68a1a0f2",
+      "teacherId": "FC19085",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Wednesday",
-      "period": 1
+      "period": 8
+    },
+    {
+      "id": "sched_119",
+      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
+      "teacherId": "FC23034",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Friday",
+      "period": 8
     },
     {
       "id": "sched_120",
       "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
+      "teacherId": "FC23034",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_121",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 4
-    },
-    {
-      "id": "sched_122",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_123",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 5
-    },
-    {
-      "id": "sched_124",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_125",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_126",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
-      "id": "sched_127",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_128",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
       "period": 8
     },
     {
-      "id": "sched_129",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "id": "sched_121",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 4
-    },
-    {
-      "id": "sched_130",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Tuesday",
+      "period": 1
+    },
+    {
+      "id": "sched_122",
+      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
+      "teacherId": "FC23034",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Friday",
+      "period": 2
+    },
+    {
+      "id": "sched_123",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR25033",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
+      "period": 8
+    },
+    {
+      "id": "sched_124",
+      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
+      "teacherId": "TR25033",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Tuesday",
+      "period": 7
+    },
+    {
+      "id": "sched_125",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC25066",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Friday",
       "period": 3
     },
     {
-      "id": "sched_131",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
+      "id": "sched_126",
+      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
+      "teacherId": "FC25066",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Tuesday",
+      "period": 6
+    },
+    {
+      "id": "sched_127",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Thursday",
+      "period": 1
+    },
+    {
+      "id": "sched_128",
+      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
+      "teacherId": "FC23106",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Wednesday",
+      "period": 1
+    },
+    {
+      "id": "sched_129",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Friday",
       "period": 1
     },
     {
-      "id": "sched_132",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "id": "sched_130",
+      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
+      "teacherId": "FC24106",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_133",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_134",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_135",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Friday",
-      "period": 7
-    },
-    {
-      "id": "sched_136",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_137",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Tuesday",
       "period": 4
     },
     {
-      "id": "sched_138",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "id": "sched_131",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_139",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_140",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Thursday",
       "period": 5
     },
     {
-      "id": "sched_141",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
+      "id": "sched_132",
+      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
+      "teacherId": "FC24144",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Tuesday",
+      "period": 2
+    },
+    {
+      "id": "sched_133",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
+      "period": 3
+    },
+    {
+      "id": "sched_134",
+      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
+      "teacherId": "FC11058",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Wednesday",
+      "period": 4
+    },
+    {
+      "id": "sched_135",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Friday",
+      "period": 4
+    },
+    {
+      "id": "sched_136",
+      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
+      "teacherId": "FC23102",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Wednesday",
+      "period": 2
+    },
+    {
+      "id": "sched_137",
+      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
+      "teacherId": "FC23106",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Wednesday",
+      "period": 5
+    },
+    {
+      "id": "sched_138",
+      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
+      "teacherId": "FC24088",
+      "classroomId": "ac9edf4c-e61e-43ff-a390-5df8eb75282c",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Thursday",
+      "period": 4
+    },
+    {
+      "id": "sched_139",
+      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
+      "teacherId": "FC24088",
+      "classroomId": "e9802368-c933-4faa-8651-fb0082fe667f",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Thursday",
+      "period": 2
+    },
+    {
+      "id": "sched_140",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Wednesday",
       "period": 7
     },
     {
-      "id": "sched_142",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
+      "id": "sched_141",
+      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
+      "teacherId": "FC18007",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Thursday",
+      "period": 3
+    },
+    {
+      "id": "sched_142",
+      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
+      "teacherId": "FC24144",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
+      "batchIds": [
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
+      ],
+      "day": "Monday",
       "period": 7
     },
     {
       "id": "sched_143",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_144",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_145",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_146",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_147",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_148",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_149",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_150",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_151",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_152",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_153",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_154",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_155",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_156",
       "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
+      "teacherId": "FC24144",
+      "classroomId": "0812a30d-df9c-47af-9c65-46e31334cd0e",
       "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_157",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Friday",
-      "period": 6
-    },
-    {
-      "id": "sched_158",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_159",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "batchIds": [
-        "8b18f7ef-b2cb-4e73-9e34-fc64ca23478a"
-      ],
-      "day": "Wednesday",
-      "period": 5
-    },
-    {
-      "id": "sched_160",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_161",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_162",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_163",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_164",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_165",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_166",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_167",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_168",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_169",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_170",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 5
-    },
-    {
-      "id": "sched_171",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 5
-    },
-    {
-      "id": "sched_172",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Monday",
       "period": 1
     },
     {
-      "id": "sched_173",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
+      "id": "auto_fill_51db5479-1ea1-4b26-b510-79ee1e640300_Monday_6",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Wednesday",
-      "period": 4
+      "day": "Monday",
+      "period": 6
     },
     {
-      "id": "sched_174",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "id": "auto_fill_51db5479-1ea1-4b26-b510-79ee1e640300_Tuesday_1",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
       ],
-      "day": "Wednesday",
+      "day": "Tuesday",
+      "period": 1
+    },
+    {
+      "id": "auto_fill_51db5479-1ea1-4b26-b510-79ee1e640300_Thursday_2",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Thursday",
+      "period": 2
+    },
+    {
+      "id": "auto_fill_51db5479-1ea1-4b26-b510-79ee1e640300_Friday_5",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "51db5479-1ea1-4b26-b510-79ee1e640300"
+      ],
+      "day": "Friday",
       "period": 5
     },
     {
-      "id": "sched_175",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
+      "id": "auto_fill_f4f89976-e756-4870-82bf-65bee4824ba1_Monday_7",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Wednesday",
+      "day": "Monday",
       "period": 7
     },
     {
-      "id": "sched_176",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
+      "id": "auto_fill_f4f89976-e756-4870-82bf-65bee4824ba1_Friday_2",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
-      "day": "Thursday",
-      "period": 7
+      "day": "Friday",
+      "period": 2
     },
     {
-      "id": "sched_177",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
+      "id": "auto_fill_f4f89976-e756-4870-82bf-65bee4824ba1_Friday_3",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
+      ],
+      "day": "Friday",
+      "period": 3
+    },
+    {
+      "id": "auto_fill_f4f89976-e756-4870-82bf-65bee4824ba1_Friday_4",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
+      "batchIds": [
+        "f4f89976-e756-4870-82bf-65bee4824ba1"
       ],
       "day": "Friday",
       "period": 4
     },
     {
-      "id": "sched_178",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
+      "id": "auto_fill_ddb3bf02-d44c-46b9-a2bb-19dad5f403cf_Monday_1",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_179",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_180",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_181",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 6
-    },
-    {
-      "id": "sched_182",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_183",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_184",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 3
-    },
-    {
-      "id": "sched_185",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_186",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Monday",
-      "period": 4
-    },
-    {
-      "id": "sched_187",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_188",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
-      "id": "sched_189",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_190",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_191",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_192",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 4
-    },
-    {
-      "id": "sched_193",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_194",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_195",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 8
-    },
-    {
-      "id": "sched_196",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_197",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Friday",
-      "period": 7
-    },
-    {
-      "id": "sched_198",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_199",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "d0da38ff-0860-48f3-919d-9a008fc65d8d"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_200",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_201",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 6
-    },
-    {
-      "id": "sched_202",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_203",
-      "subjectId": "1eea3e1f-1e62-46c4-b75f-73c2cef8943f",
-      "teacherId": "a7b8b386-5fa7-4e98-a34e-eb4b1bdf606c",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_204",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 8
-    },
-    {
-      "id": "sched_205",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_206",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_207",
-      "subjectId": "71503d7f-a6f4-4767-8d00-e1eba35b2870",
-      "teacherId": "4dde75a8-4b1a-4b26-81ef-d676c55bc782",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_208",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_209",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Thursday",
-      "period": 7
-    },
-    {
-      "id": "sched_210",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_211",
-      "subjectId": "a27a3aa3-8525-4210-9209-d48228d22249",
-      "teacherId": "b915b91d-07db-4ecd-ad24-a7170a978aed",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_212",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 4
-    },
-    {
-      "id": "sched_213",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_214",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 4
-    },
-    {
-      "id": "sched_215",
-      "subjectId": "3f2353ac-1885-4c08-af9b-5910eb669352",
-      "teacherId": "fa36ebf9-d326-4019-9211-f4d653c0e933",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_216",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_217",
-      "subjectId": "aac74e2c-0597-40eb-a2b8-3825edfb6da6",
-      "teacherId": "1d6863fa-f8d1-4ccf-9746-62cd223191f0",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 4
-    },
-    {
-      "id": "sched_218",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_219",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_220",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Monday",
       "period": 1
     },
     {
-      "id": "sched_221",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "id": "auto_fill_ddb3bf02-d44c-46b9-a2bb-19dad5f403cf_Monday_5",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "fd1cc24c-478e-40a5-9a4e-b281748ec943",
       "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 7
-    },
-    {
-      "id": "sched_222",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_223",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_224",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_225",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "dcb85492-ca5c-40e0-bb0d-c3e417cccda3",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_226",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Monday",
       "period": 5
     },
     {
-      "id": "sched_227",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
+      "id": "auto_fill_ddb3bf02-d44c-46b9-a2bb-19dad5f403cf_Thursday_5",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_228",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_229",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_230",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Thursday",
       "period": 5
     },
     {
-      "id": "sched_231",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
+      "id": "auto_fill_ddb3bf02-d44c-46b9-a2bb-19dad5f403cf_Thursday_8",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
+        "ddb3bf02-d44c-46b9-a2bb-19dad5f403cf"
       ],
       "day": "Thursday",
-      "period": 3
+      "period": 8
     },
     {
-      "id": "sched_232",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
+      "id": "auto_fill_3dd00b50-442d-41ff-b002-123a7480dd0b_Wednesday_3",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "41d2b676-5d09-4ba3-bf99-6c78ef5031fe",
       "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_233",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_234",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_235",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_236",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "6aa951cc-e25d-403d-8b62-0edfc171a472",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Friday",
       "period": 3
     },
     {
-      "id": "sched_237",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
+      "id": "auto_fill_3dd00b50-442d-41ff-b002-123a7480dd0b_Wednesday_6",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "f660f80a-88ff-4414-8ff3-72d4f2d6920c",
       "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
-      "id": "sched_238",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Wednesday",
-      "period": 7
-    },
-    {
-      "id": "sched_239",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "22e85303-11fb-468b-886b-4d238b227f28"
-      ],
-      "day": "Monday",
-      "period": 4
-    },
-    {
-      "id": "sched_240",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_241",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_242",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Wednesday",
       "period": 6
     },
     {
-      "id": "sched_243",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
+      "id": "auto_fill_3dd00b50-442d-41ff-b002-123a7480dd0b_Friday_6",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 4
-    },
-    {
-      "id": "sched_244",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 1
-    },
-    {
-      "id": "sched_245",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Friday",
       "period": 6
     },
     {
-      "id": "sched_246",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
+      "id": "auto_fill_3dd00b50-442d-41ff-b002-123a7480dd0b_Friday_7",
+      "subjectId": "SELF-STUDY",
+      "teacherId": "FC22068",
+      "classroomId": "25d263af-65ab-4c02-9665-a8bd89259f64",
       "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_247",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_248",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_249",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_250",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 5
-    },
-    {
-      "id": "sched_251",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 7
-    },
-    {
-      "id": "sched_252",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_253",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_254",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
+        "3dd00b50-442d-41ff-b002-123a7480dd0b"
       ],
       "day": "Friday",
       "period": 7
-    },
-    {
-      "id": "sched_255",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_256",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_257",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_258",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 3
-    },
-    {
-      "id": "sched_259",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_260",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
-      "id": "sched_261",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_262",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_263",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_264",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_265",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "557d014c-1d5f-47be-93fa-74131087c78c",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 8
-    },
-    {
-      "id": "sched_266",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_267",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 4
-    },
-    {
-      "id": "sched_268",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 9
-    },
-    {
-      "id": "sched_269",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_270",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_271",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_272",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_273",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_274",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 5
-    },
-    {
-      "id": "sched_275",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "c652d0ce-b46e-4e97-ba32-95717f1843cb",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_276",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Wednesday",
-      "period": 7
-    },
-    {
-      "id": "sched_277",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_278",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_279",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "653b61ad-6088-4c66-8540-42f0345d7dad",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "d0fe09d3-5370-4e6d-984a-3c92e6b07d71"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_280",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 4
-    },
-    {
-      "id": "sched_281",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 6
-    },
-    {
-      "id": "sched_282",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 7
-    },
-    {
-      "id": "sched_283",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_284",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_285",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_286",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_287",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_288",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_289",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 4
-    },
-    {
-      "id": "sched_290",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_291",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 2
-    },
-    {
-      "id": "sched_292",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 8
-    },
-    {
-      "id": "sched_293",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_294",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_295",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_296",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_297",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "6696a2a8-beb7-4f59-9ace-673404ac5bfb",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 7
-    },
-    {
-      "id": "sched_298",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 1
-    },
-    {
-      "id": "sched_299",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 1
-    },
-    {
-      "id": "sched_300",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_301",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_302",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_303",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 5
-    },
-    {
-      "id": "sched_304",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 9
-    },
-    {
-      "id": "sched_305",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "685f0682-a174-40e1-bdb4-84c981e5997b",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_306",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_307",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_308",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 5
-    },
-    {
-      "id": "sched_309",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "03764cca-ac74-4c10-904d-732577deb875",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 4
-    },
-    {
-      "id": "sched_310",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_311",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Wednesday",
-      "period": 4
-    },
-    {
-      "id": "sched_312",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "2abb1a48-f77d-44ab-b4e6-cb3caef76798",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_313",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_314",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Friday",
-      "period": 3
-    },
-    {
-      "id": "sched_315",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "1ddf0f7f-90be-46b1-9695-4f48711cfe26",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_316",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_317",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 6
-    },
-    {
-      "id": "sched_318",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_319",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "210ab952-a44f-4718-8172-3692c05daca2",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "eb6c7fb1-4ecf-49c3-9735-4beb4a923036"
-      ],
-      "day": "Monday",
-      "period": 5
-    },
-    {
-      "id": "sched_320",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 5
-    },
-    {
-      "id": "sched_321",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 2
-    },
-    {
-      "id": "sched_322",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "1d864928-cfc6-4c0b-ac61-418c83f513a4",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 1
-    },
-    {
-      "id": "sched_323",
-      "subjectId": "5c608595-ac43-4d9a-b193-711086b59bc3",
-      "teacherId": "d8670ec0-887e-4f9a-a2cd-ecb9baee8c7a",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 3
-    },
-    {
-      "id": "sched_324",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "a9e4edac-6e4b-41e7-9aae-6c9f4ef479c2",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 9
-    },
-    {
-      "id": "sched_325",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 5
-    },
-    {
-      "id": "sched_326",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 8
-    },
-    {
-      "id": "sched_327",
-      "subjectId": "fbbcf53b-f799-45ba-b702-70a29d87886f",
-      "teacherId": "a8945548-54c2-495a-9148-4f3e3a29c6cd",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 3
-    },
-    {
-      "id": "sched_328",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 3
-    },
-    {
-      "id": "sched_329",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 2
-    },
-    {
-      "id": "sched_330",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 7
-    },
-    {
-      "id": "sched_331",
-      "subjectId": "e5fe1590-759d-4567-af29-ed41a0498453",
-      "teacherId": "3cf06901-3fef-4fa9-a172-f4f8781ad40e",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 7
-    },
-    {
-      "id": "sched_332",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 3
-    },
-    {
-      "id": "sched_333",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "c8e8a3b7-d0ed-4b3d-b27f-9b4672fda54a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 8
-    },
-    {
-      "id": "sched_334",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "f17b9ced-abe7-4c30-8e82-9a68a69b4450",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 7
-    },
-    {
-      "id": "sched_335",
-      "subjectId": "de96bd96-d1d9-4f6d-a3ab-9847cd453556",
-      "teacherId": "8e125509-bf52-4350-b016-0e7338987360",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 6
-    },
-    {
-      "id": "sched_336",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 6
-    },
-    {
-      "id": "sched_337",
-      "subjectId": "a487502b-d486-40b2-8078-84eda1fdce37",
-      "teacherId": "ed27ce04-d5f4-4c36-9ba8-2ba03e9079a8",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 2
-    },
-    {
-      "id": "sched_338",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 4
-    },
-    {
-      "id": "sched_339",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 7
-    },
-    {
-      "id": "sched_340",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "881c506c-0c3b-4699-beca-8bc42e90c109",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 8
-    },
-    {
-      "id": "sched_341",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 8
-    },
-    {
-      "id": "sched_342",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "d3e16052-4ab3-4bae-ba53-25d843f0fcd9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 6
-    },
-    {
-      "id": "sched_343",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "ef40a60f-99a2-4811-a4b6-290d5c5fbdd4",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 4
-    },
-    {
-      "id": "sched_344",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 5
-    },
-    {
-      "id": "sched_345",
-      "subjectId": "f884d922-8f76-4ca1-a010-3db4fc626b4f",
-      "teacherId": "77947597-8035-46f7-bf04-97ea0bd8b73c",
-      "classroomId": "caf15fb1-73a9-4144-9ae9-f56760d7f8a5",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Wednesday",
-      "period": 9
-    },
-    {
-      "id": "sched_346",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "b029c795-34cb-46ef-b54c-eaab518fe79b",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 2
-    },
-    {
-      "id": "sched_347",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "fe5f09d0-1d23-402b-aa51-5e6c8c3752c9",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 1
-    },
-    {
-      "id": "sched_348",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "a1513635-4a44-4e36-9e48-c1373a862654",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 5
-    },
-    {
-      "id": "sched_349",
-      "subjectId": "8a8af0a7-c981-486c-a0a8-65f666b489bf",
-      "teacherId": "9ffbefac-4cb0-4e74-b1e8-dcf07e9ddb59",
-      "classroomId": "d3613dfb-b55f-41bc-af3d-db9a898d4804",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 4
-    },
-    {
-      "id": "sched_350",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 7
-    },
-    {
-      "id": "sched_351",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "2b704b63-5844-41bf-a1d7-b9a7e13a672f",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 9
-    },
-    {
-      "id": "sched_352",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "5770e9c4-32cf-4624-86d7-8466f3f7de58",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 8
-    },
-    {
-      "id": "sched_353",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "d00c1205-7c97-477b-96ad-e77944e7412a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 9
-    },
-    {
-      "id": "sched_354",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 3
-    },
-    {
-      "id": "sched_355",
-      "subjectId": "15a11d60-4c39-49c6-b76d-1ac8d84d02bd",
-      "teacherId": "fbbcfc6e-36e7-4f2d-a9c4-b3fcfef19345",
-      "classroomId": "3303a4ca-c5d1-466c-98c7-584093043320",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 1
-    },
-    {
-      "id": "sched_356",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "d2ecb8ae-8e73-454b-93d1-694c262f820a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Friday",
-      "period": 4
-    },
-    {
-      "id": "sched_357",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "cf001b73-2ffe-4e72-99b5-8842b76b8f05",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Thursday",
-      "period": 9
-    },
-    {
-      "id": "sched_358",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Monday",
-      "period": 1
-    },
-    {
-      "id": "sched_359",
-      "subjectId": "81311e0d-b725-40ec-abc3-94fa2076736c",
-      "teacherId": "40318f45-ea04-4c8a-ae29-c4295897d1c4",
-      "classroomId": "de0e153f-58e3-48b6-a733-263ea100ab9a",
-      "batchIds": [
-        "ce688b35-b4f3-4a2f-8e85-5b05ae62f261"
-      ],
-      "day": "Tuesday",
-      "period": 2
     }
   ]
 }

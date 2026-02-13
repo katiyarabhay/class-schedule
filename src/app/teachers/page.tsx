@@ -13,6 +13,7 @@ import EditTeacherModal from '@/components/EditTeacherModal';
 export default function TeachersPage() {
     const { teachers, subjects, addTeacher, updateTeacher, removeTeacher } = useScheduler();
     const [newTeacher, setNewTeacher] = useState<Partial<Teacher>>({
+        id: '', // Used for Faculty Code
         name: '',
         department: '',
         maxLoadPerWeek: 0,
@@ -26,8 +27,14 @@ export default function TeachersPage() {
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
-        if (!newTeacher.name || !newTeacher.department) {
-            alert("Name and Department are required");
+        if (!newTeacher.name || !newTeacher.department || !newTeacher.id) {
+            alert("Name, Department and Faculty Code are required");
+            return;
+        }
+
+        // Check for duplicate code (ID)
+        if (teachers.some(t => t.id === newTeacher.id)) {
+            alert(`Faculty Code '${newTeacher.id}' already exists.`);
             return;
         }
 
@@ -53,7 +60,7 @@ export default function TeachersPage() {
         }
 
         addTeacher({
-            id: crypto.randomUUID(),
+            id: newTeacher.id, // Use the provided Code as ID
             name: newTeacher.name,
             department: newTeacher.department,
             qualifiedSubjects: validSubjectIds,
@@ -61,7 +68,7 @@ export default function TeachersPage() {
             maxLoadPerWeek: newTeacher.maxLoadPerWeek || 12,
             ...newTeacher,
         } as Teacher);
-        setNewTeacher({ name: '', department: '', maxLoadPerWeek: 12 });
+        setNewTeacher({ id: '', name: '', department: '', maxLoadPerWeek: 12 });
         setSubjectCode1('');
         setSubjectCode2('');
         alert("Teacher added successfully");
@@ -109,7 +116,7 @@ export default function TeachersPage() {
             if (!normalizedItem.name) return;
 
             const teacher: Teacher = {
-                id: normalizedItem.id || crypto.randomUUID(),
+                id: normalizedItem.facultycode || normalizedItem.code || normalizedItem.id || `FAC-${crypto.randomUUID().slice(0, 8)}`, // Prefer code from CSV
                 name: normalizedItem.name || 'Unknown',
                 department: normalizedItem.department || 'General',
                 qualifiedSubjects: validSubjectIds,
@@ -134,7 +141,7 @@ export default function TeachersPage() {
 
                 <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '2rem' }}>
                     <h3>Add New Faculty</h3>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr auto', gap: '1rem', alignItems: 'end' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr auto', gap: '1rem', alignItems: 'end' }}>
                         {/* Hidden File Input */}
                         <input
                             type="file"
@@ -149,6 +156,14 @@ export default function TeachersPage() {
                                 value={newTeacher.name}
                                 onChange={(e) => setNewTeacher({ ...newTeacher, name: e.target.value })}
                                 placeholder="Dr. John Doe"
+                            />
+                        </div>
+                        <div>
+                            <label>Faculty Code <span style={{ color: '#ef4444' }}>*</span></label>
+                            <input
+                                value={newTeacher.id}
+                                onChange={(e) => setNewTeacher({ ...newTeacher, id: e.target.value })}
+                                placeholder="FAC-001"
                             />
                         </div>
                         <div>
@@ -221,7 +236,12 @@ export default function TeachersPage() {
                 <div className={styles.grid}>
                     {teachers.map((t) => (
                         <div key={t.id} className="glass-panel" style={{ padding: '1rem' }}>
-                            <h4>{t.name}</h4>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <h4>{t.name}</h4>
+                                <span style={{ fontSize: '0.8rem', color: 'var(--pk-accent)', background: 'rgba(59, 130, 246, 0.1)', padding: '2px 6px', borderRadius: '4px' }}>
+                                    {t.id}
+                                </span>
+                            </div>
                             <p style={{ color: 'var(--pk-text-muted)', fontSize: '0.9rem' }}>{t.department}</p>
 
                             {/* Qualified Subjects Display */}

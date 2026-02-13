@@ -40,7 +40,7 @@ app.on('ready', () => {
 
             // Python Path
             // Ideally should be bundled or configurable. For now using the known system path as per previous config.
-            const pythonPath = 'C:\\Users\\abhay\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe';
+            const pythonPath = process.env.PYTHON_PATH || 'python';
 
             console.log('Spawning Python:', pythonPath, scriptPath);
 

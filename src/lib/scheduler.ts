@@ -7,7 +7,7 @@ interface ClassRequest {
     batchId: string;
     subjectId: string;
     teacherId: string; // Pre-assigned for now, logical improvement: find suitable teacher
-    type: 'Theory' | 'Lab';
+    type: 'Theory' | 'Lab' | 'SelfStudy';
     duration: number; // in slots (1 for theory, maybe 2 for lab)
 }
 
@@ -79,52 +79,7 @@ export function generateSchedule(
         );
         if (conflict) return false;
 
-        const teacher = teachers.find(t => t.id === teacherId);
-        if (!teacher) return true; // Should not happen
-
-        // 2. Teacher Unavailable Slots or Absent
-        if (teacher.isAbsent) return false;
-
-        if (teacher.unavailableSlots?.some(slot => slot.day === day && slot.period === period)) {
-            return false;
-        }
-
-        // 3. Teacher Max Load Per Day (Global Limit: 4)
-        const classesToday = schedule.filter(s => s.teacherId === teacherId && s.day === day).length;
-        const maxDaily = Math.min(teacher.maxLoadPerDay, 4);
-        if (classesToday >= maxDaily) {
-            return false;
-        }
-
-        // 4. Teacher Max Load Per Week (Global Limit: 20)
-        const classesWeek = schedule.filter(s => s.teacherId === teacherId).length;
-        const maxWeekly = Math.min(teacher.maxLoadPerWeek, 20);
-        if (classesWeek >= maxWeekly) {
-            return false;
-        }
-
-        // 5. Max 2 Consecutive Lectures
-        // Check neighbors: period-1, period-2, period+1, period+2
-        const hasClassAt = (p: number) => schedule.some(s => s.teacherId === teacherId && s.day === day && s.period === p);
-
-        let consecutive = 0;
-        // Count backward
-        let p = period - 1;
-        while (p > 0 && hasClassAt(p)) {
-            consecutive++;
-            p--;
-        }
-        // Count forward
-        p = period + 1;
-        while (p <= config.slotsPerDay && hasClassAt(p)) {
-            consecutive++;
-            p++;
-        }
-
-        if (consecutive >= 2) {
-            return false;
-        }
-
+        // REMOVED ALL OTHER CONSTRAINTS (Teacher Unavailable, Max Load, Consecutive)
         return true;
     };
 
@@ -139,9 +94,8 @@ export function generateSchedule(
             if (placed) break;
 
             // Find a room
+            // Aggressively removed constraints: Type and Capacity
             const suitableRoom = classrooms.find(r =>
-                r.type === req.type &&
-                r.capacity >= (batches.find(b => b.id === req.batchId)?.size || 0) &&
                 isSlotFree(slot.day, slot.period, req.teacherId, req.batchId, r.id)
             );
 

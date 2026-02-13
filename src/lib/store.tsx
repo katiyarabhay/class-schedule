@@ -22,6 +22,7 @@ interface AppContextType extends AppState {
     updateClassroom: (classroom: Classroom) => void;
     removeClassroom: (id: string) => void;
     addSubject: (subject: Subject) => void;
+    updateSubject: (subject: Subject) => void;
     removeSubject: (id: string) => void;
     addBatch: (batch: Batch) => void;
     removeBatch: (id: string) => void;
@@ -98,6 +99,12 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
         setSubjects((prev) => [...prev, s]);
         import('@/app/actions').then(({ addSubjectAction }) => addSubjectAction(s));
     };
+
+    const updateSubject = (s: Subject) => {
+        setSubjects((prev) => prev.map(old => old.id === s.id ? s : old));
+        import('@/app/actions').then(({ updateSubjectAction }) => updateSubjectAction(s));
+    };
+
     const removeSubject = (id: string) => {
         setSubjects((prev) => prev.filter((s) => s.id !== id));
         import('@/app/actions').then(({ removeSubjectAction }) => removeSubjectAction(id));
@@ -138,6 +145,7 @@ export function SchedulerProvider({ children }: { children: ReactNode }) {
                 updateClassroom,
                 removeClassroom,
                 addSubject,
+                updateSubject,
                 removeSubject,
                 addBatch,
                 removeBatch,

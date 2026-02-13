@@ -78,6 +78,14 @@ export default function EditTeacherModal({
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div style={{ marginBottom: '1rem' }}>
+                        <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Faculty Code</label>
+                        <input
+                            style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid var(--pk-border)', background: 'rgba(0,0,0,0.05)', color: 'var(--pk-text-muted)' }}
+                            value={formData.id || ''}
+                            readOnly
+                        />
+                    </div>
+                    <div style={{ marginBottom: '1rem' }}>
                         <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Name</label>
                         <input
                             style={{ width: '100%', padding: '0.5rem', borderRadius: '6px', border: '1px solid var(--pk-border)' }}

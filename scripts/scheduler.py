@@ -104,7 +104,7 @@ def solve_schedule(data):
         
         valid_rooms = [
             room for room in classrooms 
-            if room['type'] == req['type'] and room['capacity'] >= batch_size
+            # if room['type'] == req['type'] and room['capacity'] >= batch_size # Removed constraints
         ]
         
         if not valid_rooms:
@@ -309,6 +309,72 @@ def solve_schedule(data):
                     'period': p_idx + 1 # 1-indexed
                 })
     
+    # 4. Fill Vacant Slots (Post-Processing)
+    # Goal: No lecture left vacant.
+    # Strategy: For each batch, find empty slots. Assign "Self Study" or "Library".
+    # Try to assign a room (any available).
+    # Try to assign a teacher (any available, or None).
+
+    if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
+        # Build quick lookup for occupied resources
+        occupied_rooms = set()
+        occupied_teachers = set()
+        batch_occupied_slots = set()
+
+        for entry in final_schedule:
+            d = entry['day']
+            p = entry['period']
+            occupied_rooms.add((d, p, entry['classroomId']))
+            occupied_teachers.add((d, p, entry['teacherId']))
+            for b_id in entry['batchIds']:
+                batch_occupied_slots.add((d, p, b_id))
+
+        # Iterate all batches, days, periods
+        for batch in batches:
+            b_id = batch['id']
+            for day in days:
+                for p_idx in range(slots_per_day):
+                    period = p_idx + 1
+                    
+                    if (day, period, b_id) in batch_occupied_slots:
+                        continue
+                    
+                    # Found empty slot for this batch
+                    # Find a room
+                    assigned_room = None
+                    for r in classrooms:
+                        if (day, period, r['id']) not in occupied_rooms:
+                            assigned_room = r
+                            break
+                    
+                    if not assigned_room:
+                        # No room available? Reuse a large room or just mark as 'Ground'?
+                        # For now, if no room, we can't schedule.
+                         continue
+
+                    # Find a teacher? Optional for Self Study.
+                    assigned_teacher_id = "SELF-STUDY-SUPERVISOR" 
+                    # Try to find a real teacher who is free
+                    for t in teachers:
+                         if (day, period, t['id']) not in occupied_teachers:
+                             assigned_teacher_id = t['id']
+                             occupied_teachers.add((day, period, t['id'])) # Mark busy
+                             break
+                    
+                    # Add to schedule
+                    final_schedule.append({
+                        'id': f"auto_fill_{b_id}_{day}_{period}",
+                        'subjectId': "SELF-STUDY", # Special ID
+                        'teacherId': assigned_teacher_id,
+                        'classroomId': assigned_room['id'],
+                        'batchIds': [b_id],
+                        'day': day,
+                        'period': period
+                    })
+                    
+                    occupied_rooms.add((day, period, assigned_room['id']))
+                    batch_occupied_slots.add((day, period, b_id))
+
     return final_schedule
 
 if __name__ == "__main__":

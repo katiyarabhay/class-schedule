@@ -42,6 +42,10 @@ export async function removeSubjectAction(id: string) {
     await db.update('subjects', (subjects) => subjects.filter((s) => s.id !== id));
 }
 
+export async function updateSubjectAction(subject: Subject) {
+    await db.update('subjects', (subjects) => subjects.map((s) => s.id === subject.id ? subject : s));
+}
+
 // Batches
 export async function addBatchAction(batch: Batch) {
     await db.update('batches', (batches) => [...batches, batch]);

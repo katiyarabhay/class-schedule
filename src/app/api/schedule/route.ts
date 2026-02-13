@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
 
         // Spawn python process
         // Explicitly using the WindowsApps python as D:\python.exe lacks dependencies
-        const pythonPath = 'C:\\Users\\abhay\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe';
+        const pythonPath = process.env.PYTHON_PATH || 'python';
         const pythonProcess = spawn(pythonPath, [scriptPath]);
 
         let outputData = '';

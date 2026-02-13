@@ -12,13 +12,13 @@ export interface Subject {
   id: string;
   name: string;
   code: string;
-  type: SlotType;
+  type: SlotType | 'SelfStudy'; // Extended type
   credits: number; // or hours per week
   requiredBatches: string[]; // Batches that take this subject
 }
 
 export interface Teacher {
-  id: string;
+  id: string; // Faculty Code (e.g. FAC-001)
   name: string;
   department: string;
   qualifiedSubjects: string[]; // Subject IDs
