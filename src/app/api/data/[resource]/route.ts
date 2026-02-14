@@ -1,16 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { db } from '@/lib/db';
-import { DBData } from '@/lib/db';
+import {
+    getInitialData,
+    addTeacher, updateTeacher, removeTeacher,
+    addClassroom, updateClassroom, removeClassroom,
+    addSubject, updateSubject, removeSubject,
+    addBatch, updateBatch, removeBatch,
+    updateConfig, saveSchedule
+} from '@/lib/db';
+import { Teacher, Classroom, Subject, Batch, SchedulerConfig } from '@/lib/types';
 
 export async function GET(
     request: NextRequest,
     { params }: { params: Promise<{ resource: string }> }
 ) {
     const { resource } = await params;
-    const data = await db.read();
+    const data = await getInitialData();
 
     if (resource in data) {
-        return NextResponse.json(data[resource as keyof DBData]);
+        return NextResponse.json(data[resource as keyof typeof data]);
     }
 
     return NextResponse.json({ error: 'Resource not found' }, { status: 404 });
@@ -24,20 +31,27 @@ export async function POST(
     const body = await request.json();
 
     try {
-        if (resource === 'teachers') {
-            await db.update('teachers', (list) => [...list, body]);
-        } else if (resource === 'classrooms') {
-            await db.update('classrooms', (list) => [...list, body]);
-        } else if (resource === 'subjects') {
-            await db.update('subjects', (list) => [...list, body]);
-        } else if (resource === 'batches') {
-            await db.update('batches', (list) => [...list, body]);
-        } else if (resource === 'config') {
-            await db.update('config', () => body);
-        } else if (resource === 'schedule') {
-            await db.update('schedule', () => body);
-        } else {
-            return NextResponse.json({ error: 'Invalid resource' }, { status: 400 });
+        switch (resource) {
+            case 'teachers':
+                await addTeacher(body as Teacher);
+                break;
+            case 'classrooms':
+                await addClassroom(body as Classroom);
+                break;
+            case 'subjects':
+                await addSubject(body as Subject);
+                break;
+            case 'batches':
+                await addBatch(body as Batch);
+                break;
+            case 'config':
+                await updateConfig(body as SchedulerConfig);
+                break;
+            case 'schedule':
+                await saveSchedule(body);
+                break;
+            default:
+                return NextResponse.json({ error: 'Invalid resource' }, { status: 400 });
         }
 
         return NextResponse.json({ success: true });
@@ -59,16 +73,21 @@ export async function DELETE(
     }
 
     try {
-        if (resource === 'teachers') {
-            await db.update('teachers', (list) => list.filter(t => t.id !== id));
-        } else if (resource === 'classrooms') {
-            await db.update('classrooms', (list) => list.filter(c => c.id !== id));
-        } else if (resource === 'subjects') {
-            await db.update('subjects', (list) => list.filter(s => s.id !== id));
-        } else if (resource === 'batches') {
-            await db.update('batches', (list) => list.filter(b => b.id !== id));
-        } else {
-            return NextResponse.json({ error: 'Invalid resource for delete' }, { status: 400 });
+        switch (resource) {
+            case 'teachers':
+                await removeTeacher(id);
+                break;
+            case 'classrooms':
+                await removeClassroom(id);
+                break;
+            case 'subjects':
+                await removeSubject(id);
+                break;
+            case 'batches':
+                await removeBatch(id);
+                break;
+            default:
+                return NextResponse.json({ error: 'Invalid resource for delete' }, { status: 400 });
         }
         return NextResponse.json({ success: true });
     } catch (error: any) {

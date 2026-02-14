@@ -31,7 +31,7 @@ export async function removeClassroomAction(id: string) {
 }
 
 export async function updateClassroomAction(classroom: Classroom) {
-    await db.update('classrooms', (classrooms) => classrooms.map((c) => c.id === classroom.id ? classroom : c));
+    await db.updateClassroom(classroom);
 }
 
 // Subjects
@@ -44,7 +44,7 @@ export async function removeSubjectAction(id: string) {
 }
 
 export async function updateSubjectAction(subject: Subject) {
-    await db.update('subjects', (subjects) => subjects.map((s) => s.id === subject.id ? subject : s));
+    await db.updateSubject(subject);
 }
 
 // Batches
@@ -54,6 +54,10 @@ export async function addBatchAction(batch: Batch) {
 
 export async function removeBatchAction(id: string) {
     await db.removeBatch(id);
+}
+
+export async function updateBatchAction(batch: Batch) {
+    await db.updateBatch(batch);
 }
 
 // Schedule

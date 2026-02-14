@@ -1,39 +1,16 @@
-
-import { QuerySnapshot } from 'firebase-admin/firestore';
-import { adminDb } from '@/lib/firebase/admin';
 import { Teacher, Classroom, Subject, Batch, ScheduleEntry, SchedulerConfig, DAYS_OF_WEEK } from './types';
+import fs from 'fs/promises';
+import path from 'path';
 
-// Helper to convert Firestore snapshot to array
-const snapshotToArray = <T>(snapshot: QuerySnapshot): T[] => {
-    return snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as T));
-};
+const DATA_FILE = path.join(process.cwd(), 'data.json');
 
-export async function getInitialData() {
+// Helper to read data
+async function readData() {
     try {
-        const [teachersSnap, classroomsSnap, subjectsSnap, batchesSnap, scheduleSnap, configSnap] = await Promise.all([
-            adminDb.collection('teachers').get(),
-            adminDb.collection('classrooms').get(),
-            adminDb.collection('subjects').get(),
-            adminDb.collection('batches').get(),
-            adminDb.collection('schedule').get(),
-            adminDb.collection('metadata').doc('config').get(),
-        ]);
-
-        const config = configSnap.exists ? configSnap.data() as SchedulerConfig : {
-            daysPerWeek: DAYS_OF_WEEK.slice(0, 5),
-            slotsPerDay: 6,
-        };
-
-        return {
-            teachers: snapshotToArray<Teacher>(teachersSnap),
-            classrooms: snapshotToArray<Classroom>(classroomsSnap),
-            subjects: snapshotToArray<Subject>(subjectsSnap),
-            batches: snapshotToArray<Batch>(batchesSnap),
-            schedule: snapshotToArray<ScheduleEntry>(scheduleSnap),
-            config,
-        };
+        const data = await fs.readFile(DATA_FILE, 'utf-8');
+        return JSON.parse(data);
     } catch (error) {
-        console.error("Error fetching initial data from Firestore:", error);
+        // If file doesn't exist, return default structure
         return {
             teachers: [],
             classrooms: [],
@@ -45,64 +22,117 @@ export async function getInitialData() {
     }
 }
 
+// Helper to write data
+async function writeData(data: any) {
+    await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2), 'utf-8');
+}
+
+export async function getInitialData() {
+    const data = await readData();
+    return {
+        teachers: data.teachers || [],
+        classrooms: data.classrooms || [],
+        subjects: data.subjects || [],
+        batches: data.batches || [],
+        schedule: data.schedule || [],
+        config: data.config || { daysPerWeek: DAYS_OF_WEEK.slice(0, 5), slotsPerDay: 6 },
+    };
+}
+
 // --- Teachers ---
 export async function addTeacher(teacher: Teacher) {
-    await adminDb.collection('teachers').doc(teacher.id).set(teacher);
+    const data = await readData();
+    data.teachers = data.teachers || [];
+    const index = data.teachers.findIndex((t: Teacher) => t.id === teacher.id);
+    if (index >= 0) {
+        data.teachers[index] = teacher;
+    } else {
+        data.teachers.push(teacher);
+    }
+    await writeData(data);
 }
 export async function updateTeacher(teacher: Teacher) {
-    await adminDb.collection('teachers').doc(teacher.id).update(teacher as any);
+    await addTeacher(teacher); // Same logic for JSON
 }
 export async function removeTeacher(id: string) {
-    await adminDb.collection('teachers').doc(id).delete();
+    const data = await readData();
+    data.teachers = (data.teachers || []).filter((t: Teacher) => t.id !== id);
+    await writeData(data);
 }
 
 // --- Classrooms ---
 export async function addClassroom(classroom: Classroom) {
-    await adminDb.collection('classrooms').doc(classroom.id).set(classroom);
+    const data = await readData();
+    data.classrooms = data.classrooms || [];
+    const index = data.classrooms.findIndex((c: Classroom) => c.id === classroom.id);
+    if (index >= 0) {
+        data.classrooms[index] = classroom;
+    } else {
+        data.classrooms.push(classroom);
+    }
+    await writeData(data);
+}
+export async function updateClassroom(classroom: Classroom) {
+    await addClassroom(classroom);
 }
 export async function removeClassroom(id: string) {
-    await adminDb.collection('classrooms').doc(id).delete();
+    const data = await readData();
+    data.classrooms = (data.classrooms || []).filter((c: Classroom) => c.id !== id);
+    await writeData(data);
 }
 
 // --- Subjects ---
 export async function addSubject(subject: Subject) {
-    await adminDb.collection('subjects').doc(subject.id).set(subject);
+    const data = await readData();
+    data.subjects = data.subjects || [];
+    const index = data.subjects.findIndex((s: Subject) => s.id === subject.id);
+    if (index >= 0) {
+        data.subjects[index] = subject;
+    } else {
+        data.subjects.push(subject);
+    }
+    await writeData(data);
+}
+export async function updateSubject(subject: Subject) {
+    await addSubject(subject);
 }
 export async function removeSubject(id: string) {
-    await adminDb.collection('subjects').doc(id).delete();
+    const data = await readData();
+    data.subjects = (data.subjects || []).filter((s: Subject) => s.id !== id);
+    await writeData(data);
 }
 
 // --- Batches ---
 export async function addBatch(batch: Batch) {
-    await adminDb.collection('batches').doc(batch.id).set(batch);
+    const data = await readData();
+    data.batches = data.batches || [];
+    const index = data.batches.findIndex((b: Batch) => b.id === batch.id);
+    if (index >= 0) {
+        data.batches[index] = batch;
+    } else {
+        data.batches.push(batch);
+    }
+    await writeData(data);
+}
+export async function updateBatch(batch: Batch) {
+    await addBatch(batch);
 }
 export async function removeBatch(id: string) {
-    await adminDb.collection('batches').doc(id).delete();
+    const data = await readData();
+    data.batches = (data.batches || []).filter((b: Batch) => b.id !== id);
+    await writeData(data);
 }
 
 // --- Schedule ---
 export async function saveSchedule(schedule: ScheduleEntry[]) {
-    // This is a bulk overwrite, essentially.
-    // Strategy: Delete all existing schedule entries and add new ones (batching)
-    // OR: Just add/update if simple. But schedule generation usually wipes previous.
-    // For safety in this app context, let's assume we replace the schedule.
-
-    const batch = adminDb.batch();
-
-    // 1. Get all current schedule docs (inefficient but safe for now)
-    const currentSnap = await adminDb.collection('schedule').listDocuments();
-    currentSnap.forEach(doc => batch.delete(doc));
-
-    // 2. Add new ones
-    schedule.forEach(entry => {
-        const ref = adminDb.collection('schedule').doc(entry.id);
-        batch.set(ref, entry);
-    });
-
-    await batch.commit();
+    const data = await readData();
+    data.schedule = schedule;
+    await writeData(data);
 }
 
 // --- Config ---
 export async function updateConfig(config: SchedulerConfig) {
-    await adminDb.collection('metadata').doc('config').set(config);
+    const data = await readData();
+    data.config = config;
+    await writeData(data);
 }

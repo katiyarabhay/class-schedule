@@ -210,6 +210,7 @@ export default function TimetablePage() {
                     classrooms={classrooms}
                     subjects={subjects}
                     batches={batches}
+                    schedule={schedule}
                 />
             </main>
         </div>

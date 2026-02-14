@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useAuth } from '@/context/AuthContext';
 import styles from './Sidebar.module.css';
 
 const menuItems = [
@@ -14,7 +13,6 @@ const menuItems = [
 ];
 
 export default function Sidebar() {
-    const { user, signOut } = useAuth();
     return (
         <aside className={styles.sidebar}>
             <div className={styles.logo}>
@@ -28,14 +26,7 @@ export default function Sidebar() {
                 ))}
             </nav>
             <div className={styles.footer}>
-                {user && (
-                    <div style={{ marginBottom: '1rem', fontSize: '0.8rem', color: '#888' }}>
-                        Logged in as: <br />{user.email}
-                    </div>
-                )}
-                <button onClick={signOut} className={styles.logoutBtn}>
-                    Sign Out
-                </button>
+                {/* Auth removed */}
             </div>
         </aside>
     );

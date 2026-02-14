@@ -11,6 +11,7 @@ interface EditClassModalProps {
     classrooms: Classroom[];
     subjects: Subject[];
     batches: Batch[];
+    schedule: ScheduleEntry[];
 }
 
 export default function EditClassModal({
@@ -22,7 +23,8 @@ export default function EditClassModal({
     teachers,
     classrooms,
     subjects,
-    batches
+    batches,
+    schedule
 }: EditClassModalProps) {
     const [formData, setFormData] = useState<Partial<ScheduleEntry>>({});
 
@@ -35,6 +37,19 @@ export default function EditClassModal({
     }, [classEntry]);
 
     if (!isOpen || !classEntry) return null;
+
+    // Determine occupied resources for the current time slot (day + period)
+    // We filter the schedule for entries that happen at the SAME time
+    // but are NOT the entry we are currently editing.
+    const currentPeriodSchedule = schedule.filter(s =>
+        s.day === classEntry.day &&
+        s.period === classEntry.period &&
+        s.id !== classEntry.id
+    );
+
+    const occupiedTeacherIds = new Set(currentPeriodSchedule.map(s => s.teacherId));
+    const occupiedClassroomIds = new Set(currentPeriodSchedule.map(s => s.classroomId));
+
 
     const handleChange = (field: keyof ScheduleEntry, value: any) => {
         setFormData(prev => ({ ...prev, [field]: value }));
@@ -66,6 +81,9 @@ export default function EditClassModal({
                 width: '400px', maxWidth: '90%', boxShadow: '0 4px 20px rgba(0,0,0,0.2)'
             }}>
                 <h2 style={{ marginBottom: '1.5rem', color: 'var(--pk-primary)' }}>Edit Class</h2>
+                <div style={{ marginBottom: '1rem', fontSize: '0.9rem', color: 'var(--pk-text-muted)' }}>
+                    Editing: {classEntry.day} - Period {classEntry.period}
+                </div>
 
                 <div style={{ marginBottom: '1rem' }}>
                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Subject</label>
@@ -87,7 +105,14 @@ export default function EditClassModal({
                         onChange={e => handleChange('teacherId', e.target.value)}
                     >
                         <option value="">Select Teacher</option>
-                        {teachers.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+                        {teachers.map(t => {
+                            const isBusy = occupiedTeacherIds.has(t.id);
+                            return (
+                                <option key={t.id} value={t.id} style={{ color: isBusy ? 'red' : 'inherit' }}>
+                                    {t.name} {isBusy ? '(Busy)' : ''}
+                                </option>
+                            );
+                        })}
                     </select>
                 </div>
 
@@ -99,7 +124,14 @@ export default function EditClassModal({
                         onChange={e => handleChange('classroomId', e.target.value)}
                     >
                         <option value="">Select Classroom</option>
-                        {classrooms.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+                        {classrooms.map(c => {
+                            const isOccupied = occupiedClassroomIds.has(c.id);
+                            return (
+                                <option key={c.id} value={c.id} style={{ color: isOccupied ? 'red' : 'inherit' }}>
+                                    {c.name} {isOccupied ? '(Occupied)' : ''}
+                                </option>
+                            );
+                        })}
                     </select>
                 </div>
 
